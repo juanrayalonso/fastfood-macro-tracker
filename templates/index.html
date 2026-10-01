@@ -99,6 +99,11 @@
   .link:hover { color: var(--text); }
   .ghost { font: 500 .85rem var(--mono); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 7px 12px; }
   .ghost:hover { border-color: var(--faint); }
+  .trash { display: inline-flex; align-items: center; gap: 6px; }
+  .trash:hover { color: var(--accent); border-color: var(--accent); }
+  .toast { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 30; display: flex; align-items: center; gap: 16px; background: var(--sel-bg); color: var(--sel-text); padding: 10px 16px; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.4); font-size: .92rem; }
+  .toast[hidden] { display: none; }
+  .toast button { font-weight: 600; color: #b3261e; }
   .copy { background: var(--accent); color: var(--on-accent); font: 600 .95rem var(--cond); padding: 7px 16px; border-radius: 8px; }
   .desg-body { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 10px; }
   .bar { display: flex; height: 6px; border-radius: 999px; overflow: hidden; background: var(--line); gap: 2px; margin-bottom: 8px; }
@@ -128,6 +133,7 @@
     .sum-main { flex-wrap: nowrap; gap: 8px; }
     .sum-actions { gap: 6px; }
     .ghost { padding: 6px 9px; font-size: .78rem; }
+    .trash span { display: none; }
     .copy { padding: 6px 11px; font-size: .88rem; }
     .sug .lbl { display: none; }
   }
@@ -170,10 +176,7 @@
 </div>
 
 <section class="sum off" id="sum">
-  <div class="sum-top">
-    <div class="sum-title" id="s-title"></div>
-    <button class="link" id="s-clear">Vaciar</button>
-  </div>
+  <div class="sum-title" id="s-title"></div>
   <div class="sum-main">
     <div class="sum-stats">
       <span><b class="price" id="s-price"></b></span>
@@ -181,6 +184,7 @@
       <span><b id="s-prot"></b>prot</span>
     </div>
     <div class="sum-actions">
+      <button class="ghost trash" id="s-clear" aria-label="Vaciar pedido" title="Vaciar pedido"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg><span>Vaciar</span></button>
       <button class="ghost" id="s-desg"></button>
       <button class="copy" id="s-copy">Copiar</button>
     </div>
@@ -188,6 +192,7 @@
   <div class="sug" id="s-sug" hidden></div>
   <div class="desg-body" id="s-body" hidden></div>
 </section>
+<div class="toast" id="toast" hidden><span>Pedido vaciado</span><button id="t-undo">Deshacer</button></div>
 
 <script>
 const $ = id => document.getElementById(id);
@@ -483,6 +488,8 @@ function sync() {
   renderSum();
 }
 
+let undo = null, undoTimer = null;
+
 function goTo(id) {
   requestAnimationFrame(() => { const el = $(id); if (el) el.scrollIntoView({behavior: "smooth", block: "start"}); });
 }
@@ -532,8 +539,17 @@ document.addEventListener("click", e => {
   } else if (b.id === "s-desg") {
     S.desglose = !S.desglose; renderSum();
   } else if (b.id === "s-clear") {
+    // guarda el pedido para poder deshacer
+    undo = {cart: S.cart, chip: S.chip};
+    clearTimeout(undoTimer);
+    $("toast").hidden = false;
+    undoTimer = setTimeout(() => { $("toast").hidden = true; undo = null; }, 6000);
     S.cart = {};
     S.chip = {formato: "Bowl", proteina: null, arroz: null, frijoles: null, top: [], ext: []};
+    sync();
+  } else if (b.id === "t-undo") {
+    if (undo) { S.cart = undo.cart; S.chip = undo.chip; undo = null; }
+    $("toast").hidden = true;
     sync();
   } else if (b.id === "s-copy") {
     copyOrder(b);
