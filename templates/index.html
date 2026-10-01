@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macros Fast Food</title>
+<style>
+  :root {
+    --bg: #f6f5f2; --card: #ffffff; --text: #1d1d1b; --muted: #6b6a66;
+    --line: #e4e2dc; --accent: #d9480f; --accent-soft: #fff0e8;
+    --p: #2b8a3e; --c: #1971c2; --g: #e8590c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161614; --card: #22211f; --text: #f1f0ec; --muted: #a3a19b;
+      --line: #35342f; --accent: #ff8a4c; --accent-soft: #3a2519;
+      --p: #69db7c; --c: #74c0fc; --g: #ffa94d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+  header { padding: 20px 16px 8px; max-width: 1200px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 1.5rem; }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: .9rem; }
+  main { display: grid; grid-template-columns: 1fr 340px; gap: 16px; padding: 12px 16px 120px; max-width: 1200px; margin: 0 auto; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  select, input { font: inherit; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); }
+  input[type=search] { flex: 1 1 200px; min-width: 0; }
+  .count { color: var(--muted); font-size: .85rem; margin-bottom: 8px; }
+  .item { display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
+  .item .info { flex: 1; min-width: 0; }
+  .item .name { font-weight: 600; }
+  .item .meta { color: var(--muted); font-size: .8rem; margin-top: 2px; }
+  .macros { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .85rem; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .kcal { font-weight: 700; }
+  .p { color: var(--p); } .c { color: var(--c); } .g { color: var(--g); }
+  button { font: inherit; cursor: pointer; border: none; border-radius: 8px; }
+  .add { background: var(--accent); color: #fff; width: 40px; height: 40px; font-size: 1.4rem; flex-shrink: 0; }
+  .add:active { transform: scale(.95); }
+  aside { position: sticky; top: 12px; align-self: start; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  aside h2 { margin: 0 0 10px; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; }
+  .clear { background: none; color: var(--muted); font-size: .85rem; text-decoration: underline; }
+  .totals { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px; }
+  .tot { background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; }
+  .tot b { display: block; font-size: 1.25rem; font-variant-numeric: tabular-nums; }
+  .tot span { font-size: .75rem; color: var(--muted); }
+  .cart-item { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-top: 1px solid var(--line); font-size: .88rem; }
+  .cart-item .info { flex: 1; min-width: 0; }
+  .cart-item .meta { color: var(--muted); font-size: .76rem; }
+  .qty { display: flex; align-items: center; gap: 6px; }
+  .qty button { width: 28px; height: 28px; background: var(--line); color: var(--text); }
+  .empty { color: var(--muted); font-size: .9rem; }
+  .bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 12px; background: var(--line); }
+  .bar div { height: 100%; }
+  .toggle { display: none; }
+  @media (max-width: 800px) {
+    main { grid-template-columns: 1fr; }
+    aside { position: fixed; left: 0; right: 0; bottom: 0; top: auto; border-radius: 14px 14px 0 0; max-height: 70vh; overflow-y: auto; transform: translateY(calc(100% - 64px)); transition: transform .25s; z-index: 10; box-shadow: 0 -4px 20px rgba(0,0,0,.15); }
+    aside.open { transform: translateY(0); }
+    .toggle { display: inline; background: none; color: var(--accent); font-weight: 600; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Macros Fast Food</h1>
+  <p>Elige un restaurante, agrega platillos y ve el total de tu comida.</p>
+</header>
+<main>
+  <section>
+    <div class="controls">
+      <select id="restaurante">
+        <option value="">Todos los restaurantes</option>
+        {% for r in restaurantes %}<option>{{ r }}</option>{% endfor %}
+      </select>
+      <select id="categoria"><option value="">Todas las categorías</option></select>
+      <select id="orden">
+        <option value="nombre">Ordenar: nombre</option>
+        <option value="proteina_desc">Más proteína</option>
+        <option value="kcal_asc">Menos calorías</option>
+        <option value="ratio">Más proteína por caloría</option>
+        <option value="precio_asc">Más barato</option>
+      </select>
+      <input type="search" id="buscar" placeholder="Buscar platillo…">
+    </div>
+    <div class="count" id="count"></div>
+    <div id="lista"></div>
+  </section>
+  <aside id="panel">
+    <h2><span>Mi comida <button class="toggle" id="toggle">ver</button></span><button class="clear" id="limpiar">Vaciar</button></h2>
+    <div class="totals">
+      <div class="tot"><b id="t-kcal">0</b><span>kcal</span></div>
+      <div class="tot"><b id="t-precio">$0</b><span>MXN</span></div>
+      <div class="tot"><b id="t-p" class="p">0 g</b><span>Proteína</span></div>
+      <div class="tot"><b id="t-c" class="c">0 g</b><span>Carbohidratos</span></div>
+      <div class="tot"><b id="t-g" class="g">0 g</b><span>Grasa</span></div>
+      <div class="tot"><b id="t-s">0 mg</b><span>Sodio</span></div>
+    </div>
+    <div class="bar" id="bar"></div>
+    <div id="carrito"></div>
+  </aside>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let ITEMS = [];
+let cart = {};
+try { cart = JSON.parse(localStorage.getItem("carrito") || "{}"); } catch (e) {}
+
+const fmt = n => Math.round(n).toLocaleString("es-MX");
+const fmt1 = n => (Math.round(n * 10) / 10).toLocaleString("es-MX");
+const esc = s => s.replace(/[&<>"]/g, ch => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[ch]));
+
+function save() { try { localStorage.setItem("carrito", JSON.stringify(cart)); } catch (e) {} }
+
+function filtered() {
+  const r = $("restaurante").value, c = $("categoria").value;
+  const q = $("buscar").value.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  let list = ITEMS.filter(i =>
+    (!r || i.restaurante === r) && (!c || i.categoria === c) &&
+    (!q || (i.producto + " " + i.categoria).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").includes(q)));
+  const o = $("orden").value;
+  const sorters = {
+    nombre: (a, b) => a.producto.localeCompare(b.producto, "es"),
+    proteina_desc: (a, b) => b.proteina_g - a.proteina_g,
+    kcal_asc: (a, b) => a.kcal - b.kcal,
+    ratio: (a, b) => (b.kcal ? b.proteina_g / b.kcal : 0) - (a.kcal ? a.proteina_g / a.kcal : 0),
+    precio_asc: (a, b) => (a.precio_mxn || Infinity) - (b.precio_mxn || Infinity),
+  };
+  return list.sort(sorters[o]);
+}
+
+function renderCategorias() {
+  const r = $("restaurante").value;
+  const cats = [...new Set(ITEMS.filter(i => !r || i.restaurante === r).map(i => i.categoria))].sort();
+  $("categoria").innerHTML = '<option value="">Todas las categorías</option>' +
+    cats.map(c => `<option>${esc(c)}</option>`).join("");
+}
+
+function renderLista() {
+  const list = filtered();
+  $("count").textContent = `${list.length} platillos`;
+  $("lista").innerHTML = list.map(i => `
+    <div class="item">
+      <div class="info">
+        <div class="name">${esc(i.producto)}</div>
+        <div class="meta">${esc(i.restaurante)} · ${esc(i.categoria)}${i.porcion ? " · " + esc(i.porcion) : ""}${i.precio_mxn ? " · $" + fmt1(i.precio_mxn) : ""}</div>
+        <div class="macros">
+          <span class="kcal">${fmt(i.kcal)} kcal</span>
+          <span class="p">P ${fmt1(i.proteina_g)} g</span>
+          <span class="c">C ${fmt1(i.carbs_g)} g</span>
+          <span class="g">G ${fmt1(i.grasa_g)} g</span>
+        </div>
+      </div>
+      <button class="add" data-id="${i.id}" aria-label="Agregar">+</button>
+    </div>`).join("");
+}
+
+function renderCarrito() {
+  const entries = Object.entries(cart).filter(([id]) => ITEMS[id]);
+  const t = {kcal: 0, proteina_g: 0, carbs_g: 0, grasa_g: 0, sodio_mg: 0, precio_mxn: 0};
+  entries.forEach(([id, n]) => { for (const k in t) t[k] += ITEMS[id][k] * n; });
+  $("t-kcal").textContent = fmt(t.kcal);
+  $("t-precio").textContent = "$" + fmt(t.precio_mxn);
+  $("t-p").textContent = fmt1(t.proteina_g) + " g";
+  $("t-c").textContent = fmt1(t.carbs_g) + " g";
+  $("t-g").textContent = fmt1(t.grasa_g) + " g";
+  $("t-s").textContent = fmt(t.sodio_mg) + " mg";
+  const kp = t.proteina_g * 4, kc = t.carbs_g * 4, kg = t.grasa_g * 9, sum = kp + kc + kg;
+  $("bar").innerHTML = sum ? `<div style="width:${kp / sum * 100}%;background:var(--p)"></div><div style="width:${kc / sum * 100}%;background:var(--c)"></div><div style="width:${kg / sum * 100}%;background:var(--g)"></div>` : "";
+  $("carrito").innerHTML = entries.length ? entries.map(([id, n]) => {
+    const i = ITEMS[id];
+    return `<div class="cart-item">
+      <div class="info"><div>${esc(i.producto)}</div><div class="meta">${esc(i.restaurante)} · ${fmt(i.kcal * n)} kcal · P ${fmt1(i.proteina_g * n)} g</div></div>
+      <div class="qty"><button data-dec="${id}">−</button>${n}<button data-inc="${id}">+</button></div>
+    </div>`;
+  }).join("") : '<p class="empty">Todavía no agregas nada.</p>';
+}
+
+document.addEventListener("click", e => {
+  const t = e.target;
+  if (t.dataset.id !== undefined) { cart[t.dataset.id] = (cart[t.dataset.id] || 0) + 1; }
+  else if (t.dataset.inc !== undefined) { cart[t.dataset.inc]++; }
+  else if (t.dataset.dec !== undefined) { if (--cart[t.dataset.dec] <= 0) delete cart[t.dataset.dec]; }
+  else if (t.id === "limpiar") { cart = {}; }
+  else if (t.id === "toggle") { $("panel").classList.toggle("open"); t.textContent = $("panel").classList.contains("open") ? "ocultar" : "ver"; return; }
+  else return;
+  save(); renderCarrito();
+});
+$("restaurante").addEventListener("change", () => { renderCategorias(); renderLista(); });
+["categoria", "orden"].forEach(id => $(id).addEventListener("change", renderLista));
+$("buscar").addEventListener("input", renderLista);
+
+fetch("api/items").then(r => r.json()).then(data => {
+  ITEMS = data;
+  renderCategorias(); renderLista(); renderCarrito();
+});
+</script>
+</body>
+</html>
