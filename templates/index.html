@@ -84,48 +84,52 @@
   .count { font: .8rem var(--mono); color: var(--muted); }
 
   /* Tarjeta de resumen */
-  .sum { position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); width: min(828px, calc(100% - 24px)); max-height: calc(100vh - 24px); overflow-y: auto; background: #1b1b18; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; box-shadow: 0 -8px 30px rgba(0,0,0,.45); z-index: 20; transition: transform .25s ease, opacity .25s ease; }
+  .sum { position: fixed; left: 50%; bottom: 10px; transform: translateX(-50%); width: min(828px, calc(100% - 20px)); max-height: 70vh; overflow-y: auto; background: #1b1b18; border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; box-shadow: 0 -6px 24px rgba(0,0,0,.4); z-index: 20; transition: transform .25s ease, opacity .25s ease; }
   .sum.off { transform: translate(-50%, calc(100% + 24px)); opacity: 0; pointer-events: none; }
-  .sum-title { font: 600 1.12rem/1.25 var(--cond); margin-bottom: 10px; }
-  .sum-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .lbl { display: block; font: 500 .74rem var(--mono); letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
-  .sum-stats b { font: 700 1.7rem/1.15 var(--cond); }
+  .sum-top, .sum-main { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .sum-title { font: 600 .98rem/1.3 var(--cond); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .sum.desg .sum-title { white-space: normal; }
+  .sum-main { margin-top: 4px; flex-wrap: wrap; row-gap: 6px; }
+  .sum-stats { display: flex; align-items: baseline; gap: 14px; font: .85rem var(--mono); color: var(--muted); white-space: nowrap; }
+  .sum-stats b { font: 700 1.3rem var(--cond); color: var(--text); margin-right: 3px; }
   .sum-stats .price { color: var(--accent); }
-  .sum-row { display: flex; justify-content: space-between; align-items: center; margin: 10px 0 12px; }
-  .link { font: 500 .78rem var(--mono); letter-spacing: .1em; color: var(--muted); }
+  .sum-actions { display: flex; gap: 8px; margin-left: auto; }
+  .lbl { display: block; font: 500 .72rem var(--mono); letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+  .link { font: 500 .74rem var(--mono); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; flex-shrink: 0; }
   .link:hover { color: var(--text); }
-  .bar { display: flex; height: 12px; border-radius: 999px; overflow: hidden; background: var(--line); gap: 2px; margin: 4px 0 12px; }
+  .ghost { font: 500 .85rem var(--mono); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 7px 12px; }
+  .ghost:hover { border-color: var(--faint); }
+  .copy { background: var(--accent); color: var(--on-accent); font: 600 .95rem var(--cond); padding: 7px 16px; border-radius: 8px; }
+  .desg-body { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .bar { display: flex; height: 6px; border-radius: 999px; overflow: hidden; background: var(--line); gap: 2px; margin-bottom: 8px; }
   .bar div { height: 100%; }
-  .macros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; }
-  .macro { border-left: 3px solid; padding: 2px 0 2px 12px; }
-  .macro b { display: block; font: 700 1.35rem var(--cond); }
-  .macro span { color: var(--muted); font-size: .85rem; }
-  .micros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; padding: 10px 12px; background: var(--surface-2); border-radius: 8px; }
-  .micros b { display: block; font: 500 1rem var(--mono); }
-  .micros span { color: var(--muted); font-size: .8rem; }
-  .sug { margin: 12px 0; }
-  .sug .lbl { margin-bottom: 6px; }
-  .sug .chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
-  .sug .chip { flex-shrink: 0; padding: 6px 12px; font-size: .9rem; }
-  .line { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font: .82rem var(--mono); }
+  .legend i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+  .legend span { color: var(--muted); }
+  .micro-line { font: .78rem var(--mono); color: var(--muted); margin: 6px 0 8px; }
+  .lines { max-height: 26vh; overflow-y: auto; }
+  .line { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 5px 0; border-top: 1px solid var(--line); font-size: .9rem; }
   .line .nm { min-width: 0; }
-  .line .pr { font: .85rem var(--mono); color: var(--muted); margin-left: 6px; }
-  .line .kc { font: .9rem var(--mono); color: var(--muted); white-space: nowrap; }
-  .qty { display: inline-flex; align-items: center; gap: 6px; margin-right: 10px; font-family: var(--mono); font-size: .85rem; }
-  .qty button { width: 24px; height: 24px; border-radius: 6px; background: var(--surface-2); }
-  .ratio { color: var(--muted); font-size: .9rem; margin: 12px 0 2px; }
-  .copy { width: 100%; margin-top: 4px; background: var(--accent); color: var(--on-accent); font: 600 1.1rem var(--cond); padding: 13px; border-radius: 8px; }
-  .copy:disabled { opacity: .45; cursor: default; }
+  .line .pr { font: .78rem var(--mono); color: var(--muted); margin-left: 6px; }
+  .line .kc { font: .8rem var(--mono); color: var(--muted); white-space: nowrap; }
+  .qty { display: inline-flex; align-items: center; gap: 5px; margin-right: 8px; font-family: var(--mono); font-size: .8rem; }
+  .qty button { width: 22px; height: 22px; border-radius: 6px; background: var(--surface-2); }
+  .ratio { color: var(--muted); font-size: .78rem; margin: 6px 0 0; }
+  .sug { margin-top: 8px; display: flex; align-items: center; gap: 10px; }
+  .sug .lbl { flex-shrink: 0; }
+  .sug .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .sug .chip { flex-shrink: 0; padding: 4px 10px; font-size: .82rem; }
 
   @media (max-width: 560px) {
     .cards { grid-template-columns: 1fr 1fr; }
-    .sum-stats b { font-size: 1.4rem; }
     .step-h h2 { font-size: 1.5rem; }
-    .sum { padding: 12px 14px; bottom: 8px; width: calc(100% - 16px); }
-    .sum-title { font-size: 1rem; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .sum.desg .sum-title { display: block; }
-    .sum-row { margin: 6px 0 8px; }
-    .copy { padding: 10px; }
+    .sum-stats { gap: 8px; font-size: .75rem; }
+    .sum-stats b { font-size: 1.08rem; margin-right: 2px; }
+    .sum-main { flex-wrap: nowrap; gap: 8px; }
+    .sum-actions { gap: 6px; }
+    .ghost { padding: 6px 9px; font-size: .78rem; }
+    .copy { padding: 6px 11px; font-size: .88rem; }
+    .sug .lbl { display: none; }
   }
 </style>
 </head>
@@ -166,19 +170,23 @@
 </div>
 
 <section class="sum off" id="sum">
-  <div class="sum-title" id="s-title"></div>
-  <div class="sum-stats">
-    <div><span class="lbl">Total</span><b class="price" id="s-price"></b></div>
-    <div><span class="lbl">Kcal</span><b id="s-kcal"></b></div>
-    <div><span class="lbl">Proteína</span><b id="s-prot"></b></div>
+  <div class="sum-top">
+    <div class="sum-title" id="s-title"></div>
+    <button class="link" id="s-clear">Vaciar</button>
   </div>
-  <div class="sum-row">
-    <button class="link" id="s-desg"></button>
-    <button class="link" id="s-clear">VACIAR</button>
+  <div class="sum-main">
+    <div class="sum-stats">
+      <span><b class="price" id="s-price"></b></span>
+      <span><b id="s-kcal"></b>kcal</span>
+      <span><b id="s-prot"></b>prot</span>
+    </div>
+    <div class="sum-actions">
+      <button class="ghost" id="s-desg"></button>
+      <button class="copy" id="s-copy">Copiar</button>
+    </div>
   </div>
-  <div id="s-body" hidden></div>
   <div class="sug" id="s-sug" hidden></div>
-  <button class="copy" id="s-copy">Copiar pedido</button>
+  <div class="desg-body" id="s-body" hidden></div>
 </section>
 
 <script>
@@ -282,8 +290,8 @@ function renderSum() {
   $("s-title").textContent = orderTitle();
   $("s-price").textContent = money(t.price);
   $("s-kcal").textContent = fmt(t.kcal);
-  $("s-prot").textContent = fmt(t.p) + " g";
-  $("s-desg").textContent = (S.desglose ? "▾" : "▸") + " DESGLOSE";
+  $("s-prot").textContent = fmt(t.p) + "g";
+  $("s-desg").textContent = "Desglose " + (S.desglose ? "▾" : "▴");
 
   renderSug();
   const body = $("s-body");
@@ -302,21 +310,17 @@ function renderSum() {
       <div style="width:${kc / sum * 100}%;background:var(--c)"></div>
       <div style="width:${kg / sum * 100}%;background:var(--g)"></div>
     </div>
-    <div class="macros">
-      <div class="macro" style="border-color:var(--p)"><b>${fmt(t.p)} g</b><span>Proteína · ${pct(kp)}%</span></div>
-      <div class="macro" style="border-color:var(--c)"><b>${fmt(t.c)} g</b><span>Carbs · ${pct(kc)}%</span></div>
-      <div class="macro" style="border-color:var(--g)"><b>${fmt(t.g)} g</b><span>Grasa · ${pct(kg)}%</span></div>
+    <div class="legend">
+      <div><i style="background:var(--p)"></i>P ${fmt(t.p)} g <span>${pct(kp)}%</span></div>
+      <div><i style="background:var(--c)"></i>C ${fmt(t.c)} g <span>${pct(kc)}%</span></div>
+      <div><i style="background:var(--g)"></i>G ${fmt(t.g)} g <span>${pct(kg)}%</span></div>
     </div>
-    <div class="micros">
-      <div><b>${fmt1(t.a)} g</b><span>Azúcar</span></div>
-      <div><b>${fmt1(t.f)} g</b><span>Fibra</span></div>
-      <div><b>${fmt(t.n)} mg</b><span>Sodio</span></div>
-    </div>
-    ${lines.map(l => `
+    <div class="micro-line">Azúcar ${fmt1(t.a)} g · Fibra ${fmt1(t.f)} g · Sodio ${fmt(t.n)} mg</div>
+    <div class="lines">${lines.map(l => `
       <div class="line">
         <div class="nm">${esc(l.name)}${l.price ? `<span class="pr">${money(l.price * l.qty)}</span>` : ""}</div>
         <div class="kc">${l.key ? `<span class="qty"><button data-dec="${esc(l.key)}" aria-label="Quitar uno">−</button>${l.qty}<button data-inc="${esc(l.key)}" aria-label="Agregar uno">+</button></span>` : ""}${fmt(l.kcal * l.qty)} kcal</div>
-      </div>`).join("")}
+      </div>`).join("")}</div>
     ${t.p > 0 ? `<p class="ratio">${t.price ? fmt1(t.p / (t.price / 10)) + " g de proteína por cada $10 · " : ""}${fmt(t.kcal / t.p)} kcal por gramo de proteína</p>` : ""}`;
 }
 
@@ -327,7 +331,7 @@ function renderSug() {
   const box = $("s-sug");
   box.hidden = !salsas.length;
   if (!salsas.length) { box.innerHTML = ""; return; }
-  box.innerHTML = `<span class="lbl">¿Le pones salsa? · opcional</span><div class="chips">${salsas.map(itemChip).join("")}</div>`;
+  box.innerHTML = `<span class="lbl">¿Salsa? opcional</span><div class="chips">${salsas.map(itemChip).join("")}</div>`;
 }
 
 /* ---------- Armar ---------- */
@@ -551,7 +555,7 @@ function copyOrder(btn) {
     ...lines.map(l => `- ${l.qty > 1 ? l.qty + "× " : ""}${l.name}${l.rest ? " (" + l.rest + ")" : ""}${l.price ? " " + money(l.price * l.qty) : ""}`),
     `Total: ${money(t.price)} · ${fmt(t.kcal)} kcal · P ${fmt(t.p)} g · C ${fmt(t.c)} g · G ${fmt(t.g)} g · Azúcar ${fmt1(t.a)} g · Fibra ${fmt1(t.f)} g · Sodio ${fmt(t.n)} mg`,
   ].join("\n");
-  const done = () => { btn.textContent = "¡Copiado!"; setTimeout(() => btn.textContent = "Copiar pedido", 1500); };
+  const done = () => { btn.textContent = "¡Copiado!"; setTimeout(() => btn.textContent = "Copiar", 1500); };
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(text).then(done);
   } else {
