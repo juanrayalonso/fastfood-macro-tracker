@@ -9,7 +9,7 @@ NUM_FIELDS = ["kcal", "proteina_g", "carbs_g", "grasa_g", "azucar_g", "fibra_g",
 
 # Tipo de restaurante -> restaurantes, en el orden en que se muestran
 TIPOS = {
-    "Hamburguesas": ["McDonald's", "Carl's Jr.", "Jack In The Box"],
+    "Hamburguesas": ["McDonald's", "Carl's Jr."],
     "Mexicana": ["Chipotle", "Taco Palenque", "Doña Tota"],
     "Pizza e italiana": ["Domino's Pizza", "Napoli"],
     "Pollo y alitas": ["KFC", "Las Aliadas"],
