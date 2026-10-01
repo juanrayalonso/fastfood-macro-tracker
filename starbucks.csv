@@ -1,0 +1,297 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio,origen_macros
+Starbucks,Bebidas,Café Latte (Grande),473 ml,160,13.0,22.0,1.5,19.8,0.0,156,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Bebidas,Café Latte (Alto),355 ml,120,10.0,17.0,1.0,15.3,0.0,117,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Repostería,Pastel de Chocolate,1 rebanada (115 g),476,5.5,62.2,22.2,28.0,2.5,402,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Croissant Jamón y Queso,100 g,280,8.0,47.0,7.0,3.3,3.8,560,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Bebidas,Chai Tea Latte (Grande),355 ml,200,6.0,34.0,6.0,30.6,0.0,117,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Sandwich Pavo Panela,1 sándwich (228 g),433,29.6,44.9,18.2,3.1,3.6,866,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Bebidas,Cappuccino (Alto),355 ml,110,10.0,15.0,1.5,13.5,0.0,117,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Bebidas,Caramel Macchiato (Grande),473 ml,250,12.0,45.0,2.5,40.5,0.0,156,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Baguette Clásica,1 porción (241 g),540,25.0,63.6,24.1,4.4,5.1,1080,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Bebidas,Caramel Frappuccino (Grande),473 ml,215,4.0,42.0,3.0,37.8,0.0,189,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Bebidas,Sugar Free Vanilla Protein Latte,473 ml,230,27.0,17.0,6.0,15.3,0.0,156,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Bebidas,Café Frappuccino sin Crema Batida (Grande),473 ml,150,4.0,28.0,2.0,25.2,0.0,189,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Piadini de Claras y Espinaca con Ricotta,100 g,164,10.5,15.3,7.0,1.1,1.2,328,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,Repostería,Mini Brownie,1 cuadro (43 g),180,2.0,25.0,8.0,11.2,1.0,150,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Galleta Chocochips,1 galleta (30 g),130,6.0,15.0,8.0,6.8,0.6,105,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Bebidas,Mango Dragonfruit Refresher,473 ml,90,0.0,21.0,0.0,18.9,0.0,8,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Bebidas,Caramel Macchiato (Venti),591 ml,310,14.0,57.0,3.0,51.3,0.0,195,"estimado (azúcar, fibra y sodio)",99,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Baguette de Pollo,1 porción (190 g),500,24.0,57.0,19.0,4.0,4.6,1000,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Repostería,Pan de Chocolate,1 pieza (90 g),308,5.0,34.0,18.0,15.3,1.4,315,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Sandwich Pavo y Panela,1 sándwich (165 g),285,18.5,38.0,9.0,2.7,3.0,570,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Bebidas,Frappuccino Mocha,281 ml,180,6.0,33.0,3.0,29.7,0.0,112,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Bebidas,Iced Brown Sugar Shaken Espresso,475 ml,120,2.0,22.0,3.0,19.8,0.0,8,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Pan de Queso,1 pieza (45 g),157,3.0,21.0,6.0,1.5,1.7,314,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Bagel de Pechuga con Queso,1 porción (154 g),258,14.2,41.3,6.3,2.9,3.3,516,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,Repostería,Cheesecake de Frambuesa,100 g,340,6.0,29.0,22.0,13.1,1.2,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Bebidas,Matcha Cream Frappuccino (Grande),473 ml,420,6.0,62.0,16.0,55.8,0.0,189,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Bebidas,Caramel Frappuccino (Venti),591 ml,470,6.0,74.0,16.0,66.6,0.0,236,"estimado (azúcar, fibra y sodio)",114,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Baguette Española,1 porción (194 g),630,23.8,60.6,31.4,4.2,4.9,1260,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Bebidas,Vainilla Cream Cold Brew,300 ml,100,1.0,12.0,6.0,10.8,0.0,99,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Bebidas,Vainilla Cold Brew,400 ml,110,1.0,14.0,6.0,12.6,0.0,132,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Panini Clásico Jamón y Queso,100 g,230,13.0,22.0,10.0,1.5,1.8,460,"estimado (azúcar, fibra y sodio)",105,estimado,fatsecret_mx
+Starbucks,Bebidas,Green Tea Latte,400 ml,420,14.0,88.0,3.0,79.2,0.0,132,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Repostería,Pastel de Zanahoria,100 g,380,5.0,32.0,28.0,14.4,1.3,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Bebidas,Pink Drink,430 ml,140,1.0,27.0,2.5,24.3,0.0,8,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Madeleines Pan Dulce,100 g,458,5.0,51.0,26.0,22.9,2.0,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Repostería,Birthday Cake Pop,1 pieza (38 g),160,2.0,21.0,8.0,9.5,0.8,133,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Bebidas,Cappuccino (Grande),473 ml,140,13.0,20.0,2.0,18.0,0.0,156,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Repostería,Panque de Limón,100 g,450,5.0,46.0,27.0,20.7,1.8,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Bebidas,Café Mocha con Crema Batida (Grande),473 ml,270,12.0,49.0,5.0,44.1,0.0,156,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Repostería,Hojaldre de Moras,100 g,290,6.0,49.0,19.0,22.1,2.0,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta Red Velvet,100 g,462,5.0,52.0,26.0,23.4,2.1,350,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Tarta de Moras,100 g,394,5.0,44.0,22.0,19.8,1.8,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Grilled Cheese,1 sándwich (160 g),470,23.0,57.0,29.0,4.0,4.6,940,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta de Chocolate con Nuez,1 galleta (75 g),360,5.0,33.0,22.0,14.8,1.3,262,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Pastel de Chocolate Semi Amargo,100 g,362,4.0,37.0,22.0,16.7,1.5,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Repostería,Almond Croissant,1 pieza (99 g),380,9.0,38.0,23.0,17.1,1.5,346,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Envuelto Poblano,100 g,238,6.0,24.0,14.0,1.7,1.9,476,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,Bebidas,Espresso Americano (Grande),473 ml,0,0.0,0.0,0.0,0.0,0.0,8,"estimado (azúcar, fibra y sodio)",59,estimado,fatsecret_mx
+Starbucks,Repostería,Croissant de Mantequilla,1 porción (70 g),308,6.0,36.0,15.0,16.2,1.4,245,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Bebidas,Pumpkin Spice Latte (Venti),591 ml,470,18.0,65.0,16.0,58.5,0.0,195,"estimado (azúcar, fibra y sodio)",114,estimado,fatsecret_mx
+Starbucks,Bebidas,Skinny Vainilla Late Helado,1 porción (~355 ml),87,7.3,11.3,1.4,10.2,0.0,117,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Repostería,Chocolate Donut,100 g,196,3.0,18.0,11.0,8.1,0.7,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Bebidas,Mocha Frappuccino (Alto),355 ml,150,4.0,29.0,3.0,26.1,0.0,142,"estimado (azúcar, fibra y sodio)",80,estimado,fatsecret_mx
+Starbucks,Bebidas,Cappuccino (Venti),591 ml,180,16.0,25.0,2.5,22.5,0.0,195,"estimado (azúcar, fibra y sodio)",99,estimado,fatsecret_mx
+Starbucks,Bebidas,Caramel Frappuccino (Alto),355 ml,165,3.0,32.0,3.0,28.8,0.0,142,"estimado (azúcar, fibra y sodio)",80,estimado,fatsecret_mx
+Starbucks,Bebidas,Chocolate Caliente,500 ml,380,17.0,63.0,11.0,56.7,0.0,165,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Fruta Mixta,1 porción (230 g),100,2.0,23.0,1.0,18.4,2.3,44,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Panque de Naranja,100 g,420,6.0,43.0,25.0,19.4,1.7,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Bebidas,Frappuccino Vainilla,281 ml,195,6.0,36.0,3.0,32.4,0.0,112,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Bebidas,Lemon Refresher (Alto),355 ml,45,0.0,12.0,0.0,10.8,0.0,8,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Panini Tres Quesos,100 g,290,13.0,32.7,13.0,2.3,2.6,580,"estimado (azúcar, fibra y sodio)",105,estimado,fatsecret_mx
+Starbucks,Repostería,Tejas de Almendra,1 porción (30 g),122,6.0,16.9,3.7,7.6,0.7,105,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Ensalada de Pollo y Pasta,100 g,195,8.0,21.6,8.5,1.5,1.7,390,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,"Spinach, Feta and Egg White Wrap",1 wrap (159 g),290,20.0,34.0,8.0,2.4,2.7,580,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Repostería,Cheesecake Roulet,100 g,392,6.0,45.0,21.0,20.2,1.8,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Toronja en Gajos,100 g,40,1.0,9.0,0.0,7.2,0.9,25,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Croissant Roll,1 pieza (147 g),490,21.0,40.0,27.0,2.8,3.2,980,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,Bebidas,Yogurt Frappuccino,500 ml,345,7.1,70.8,3.5,63.7,0.0,200,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Bebidas,Flat White,400 ml,170,9.0,14.0,9.0,12.6,0.0,132,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Leche de Avena,1 taza (240 ml),140,3.0,16.0,7.0,14.4,0.0,96,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,Repostería,Hojaldre de Maple,100 g,290,6.0,49.0,19.0,22.1,2.0,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,"Turkey Bacon, Cheddar & Egg White Sandwich",1 sándwich (120 g),230,17.0,28.0,5.0,2.0,2.2,460,"estimado (azúcar, fibra y sodio)",119,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Muffin Chocochips,1 muffin (140 g),518,7.0,74.0,25.0,33.3,3.0,490,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta Dulce de Leche,100 g,487,9.0,70.0,19.0,31.5,2.8,350,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Zero Creamer Caramel Macchiato,15 ml,20,0.0,1.0,1.5,0.9,0.0,6,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,Repostería,Pan de Muerto,1 porción (80 g),260,5.0,42.0,8.0,18.9,1.7,280,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Repostería,Pay de Limón,100 g,329,4.0,22.0,25.0,9.9,0.9,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Bebidas,Cajeta Cream Frappuccino (Alto),355 ml,220,3.0,48.0,3.0,43.2,0.0,142,"estimado (azúcar, fibra y sodio)",80,estimado,fatsecret_mx
+Starbucks,Bebidas,Frappuccino Vainilla Light,281 ml,99,6.0,12.0,3.0,10.8,0.0,112,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Repostería,Cakepop Vainilla,1 pieza (38 g),160,2.0,21.0,8.0,9.5,0.8,133,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Tiramisú,100 g,300,2.2,35.3,16.1,15.9,1.4,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Panini Pavo y Panela,100 g,190,12.0,17.0,8.0,1.2,1.4,380,"estimado (azúcar, fibra y sodio)",105,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Chips de Camote con Sal del Himalaya,100 g,484,3.0,64.0,24.0,28.8,2.6,350,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta Decorada,1 pieza (100 g),447,6.0,72.0,15.0,32.4,2.9,350,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Bebidas,Café del Día (Venti),591 ml,0,0.0,0.0,0.0,0.0,0.0,8,"estimado (azúcar, fibra y sodio)",69,estimado,fatsecret_mx
+Starbucks,Repostería,Mini Pan de Muerto con Relleno de Zarzamora,100 g,349,5.0,53.0,13.0,23.9,2.1,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Repostería,Trenza de Maple,1 porción (90 g),440,6.0,52.0,23.0,23.4,2.1,315,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Bebidas,Café del Día (Alto),355 ml,0,0.0,0.0,0.0,0.0,0.0,8,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Chipotle (salsa),1 blister (17 g),4,0.0,1.0,0.0,0.5,0.0,60,"estimado (azúcar, fibra y sodio)",12,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Panini Español Chorizo y Queso,100 g,250,12.0,23.0,12.0,1.6,1.8,500,"estimado (azúcar, fibra y sodio)",105,estimado,fatsecret_mx
+Starbucks,Bebidas,Frappuccino Mocha Light,281 ml,91,6.0,10.0,3.0,9.0,0.0,112,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Repostería,Dona Sabor a Chocolate con Nuez,100 g,443,8.0,51.0,23.0,22.9,2.0,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Repostería,Croissant Integral,100 g,380,6.0,51.0,21.0,22.9,2.0,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Ensalada Frutos Rojos,100 g,185,3.0,7.0,17.0,3.1,0.3,350,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Classic Chocolate Cake,100 g,390,4.0,36.0,26.0,16.2,1.4,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Nueces y Frutos Secos,1 porción (40 g),180,4.0,23.0,8.0,18.4,2.3,16,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Bebidas,Café del Día (Grande),473 ml,0,0.0,0.0,0.0,0.0,0.0,8,"estimado (azúcar, fibra y sodio)",59,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Leche de Almendra,1 taza (240 ml),60,2.0,5.0,4.0,4.5,0.0,96,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Yogurt Batido con Fresa y Mora Azul,100 g,165,3.8,24.3,5.8,19.4,2.4,25,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Guacamole,1 porción (30 g),40,1.0,3.0,3.0,1.4,0.1,105,"estimado (azúcar, fibra y sodio)",12,estimado,fatsecret_mx
+Starbucks,Bebidas,Green Tea Cream Frappuccino (Grande),473 ml,331,5.0,61.0,9.0,54.9,0.0,189,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Repostería,Muffin de Plátano,100 g,350,6.0,47.0,17.0,21.2,1.9,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Creamer Caramel Macchiato,15 ml,40,0.0,6.0,1.5,5.4,0.0,6,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,Bebidas,Pumpkin Cream Cold Brew,400 ml,250,3.0,31.0,12.0,27.9,0.0,132,"estimado (azúcar, fibra y sodio)",100,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Panini Español 2021,100 g,260,14.0,33.0,9.0,2.3,2.6,520,"estimado (azúcar, fibra y sodio)",105,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta de Chocolate con Chunks,3 galletas (88 g),135,5.1,12.2,6.9,5.5,0.5,308,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Yogurt Natural con Fresa y Mora Azul,1 porción (125 g),130,5.0,23.7,2.0,19.0,2.4,29,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Muffin Blueberry,100 g,330,4.0,46.0,16.0,20.7,1.8,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Mix Manzana con Uva,100 g,160,1.0,24.0,0.0,19.2,2.4,25,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Nueces Cubiertas con Chocolate con Leche,100 g,583,7.0,42.0,43.0,33.6,4.2,25,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Bagel (sin queso ni mermelada),1 bagel (140 g),392,14.0,81.2,1.4,5.7,6.5,784,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,Bebidas,Hibiscus,250 ml,70,0.0,18.0,0.0,16.2,0.0,8,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Bebidas,Cappuccino Almond Milk,400 ml,100,3.0,9.0,6.0,8.1,0.0,132,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Avena con Chía,100 g,82,3.0,13.0,2.0,10.4,1.3,25,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta de Manjar,1 porción (65 g),381,13.0,51.0,14.3,22.9,2.0,228,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Brownie Cookie Bar,1/2 pieza (45 g),218,4.0,25.0,11.0,11.2,1.0,158,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Panque Integral de Linaza,100 g,340,7.0,46.0,14.0,20.7,1.8,350,"estimado (azúcar, fibra y sodio)",65,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta Sugar Free Chocolate,1 galleta (30 g),190,6.0,6.0,16.0,2.7,0.2,105,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta de Avena y Amaranto con Arándanos,100 g,395,6.2,65.4,12.1,29.4,2.6,350,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Egg White & Roasted Red Pepper Sous Vide Egg Bites,1 porción (130 g),170,12.0,11.0,8.0,0.8,0.9,340,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta Lavanda,100 g,363,4.0,62.0,11.0,27.9,2.5,350,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Cookie Bites,100 g,533,10.4,43.3,35.3,19.5,1.7,350,"estimado (azúcar, fibra y sodio)",69,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Envuelto de Atún,100 g,439,14.0,46.0,23.0,3.2,3.7,878,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,Repostería,Cookie Straw,1 galleta (18 g),75,1.0,11.0,3.0,5.0,0.4,63,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Non Dairy Creamer Almondmilk & Oatmilk,15 ml,30,0.0,5.0,1.0,4.5,0.0,6,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Breakfast Muffin,1 porción (158 g),295,17.3,29.1,13.1,2.0,2.3,590,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Frutas Secas y Cereales,1 bolsita (20 g),90,1.0,17.0,0.0,13.6,1.7,13,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Topping Cacahuate,1 sobre (20 g),100,3.0,8.0,7.0,6.4,0.8,13,"estimado (azúcar, fibra y sodio)",12,estimado,fatsecret_mx
+Starbucks,Bebidas,Toffee Nut Latte,200 ml,73,2.9,8.6,3.0,7.7,0.0,66,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Panini Clásico 2021,100 g,200,12.0,23.0,8.0,1.6,1.8,400,"estimado (azúcar, fibra y sodio)",105,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Creamer White Chocolate Mocha,15 ml,40,0.0,6.0,1.5,5.4,0.0,6,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Leche de Coco,1 taza (240 ml),80,1.0,8.0,5.0,7.2,0.0,96,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,Repostería,Rosca de Reyes,100 g,310,7.0,51.0,9.0,22.9,2.0,350,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Topping Frutas Rojas,1 paquetito (20 g),90,1.0,17.0,0.0,13.6,1.7,13,"estimado (azúcar, fibra y sodio)",12,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Toffee Nut (jarabe),100 ml,50,1.8,7.6,1.2,6.8,0.0,33,"estimado (azúcar, fibra y sodio)",15,estimado,fatsecret_mx
+Starbucks,Bebidas,Energy Coffee Beverage,443 ml,80,10.0,5.0,3.0,4.5,0.0,146,"estimado (azúcar, fibra y sodio)",85,estimado,fatsecret_mx
+Starbucks,"Ensaladas, fruta y snacks",Mix Chips,100 g,448,7.0,42.0,28.0,18.9,1.7,350,"estimado (azúcar, fibra y sodio)",75,estimado,fatsecret_mx
+Starbucks,Repostería,Brownie Brittle,1 paquete (28 g),124,1.0,21.0,4.0,9.5,0.8,98,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Topping Manzana,1 porción (20 g),70,2.0,14.0,1.0,11.2,1.4,13,"estimado (azúcar, fibra y sodio)",12,estimado,fatsecret_mx
+Starbucks,Extras y toppings,Queso Crema,1 bote (28 g),75,1.0,2.0,7.0,0.9,0.1,98,"estimado (azúcar, fibra y sodio)",12,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta de Manzana y Cereales,1 galleta (30 g),160,6.0,15.0,8.0,6.8,0.6,105,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta Sugar Free,1 galleta (80 g),355,11.0,35.0,19.0,15.8,1.4,280,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Repostería,Galleta de Especias,100 g,361,12.0,40.0,17.0,18.0,1.6,350,"estimado (azúcar, fibra y sodio)",49,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Panini Portobello y Queso,100 g,170,8.0,20.0,8.0,1.4,1.6,340,"estimado (azúcar, fibra y sodio)",105,estimado,fatsecret_mx
+Starbucks,Sándwiches y salados,Envuelto de Champiñones,100 g,230,7.0,23.0,13.0,1.6,1.8,460,"estimado (azúcar, fibra y sodio)",89,estimado,fatsecret_mx
+Starbucks,Bebidas,China Green (Venti),591 ml,0,0.0,0.0,0.0,0.0,0.0,8,"estimado (azúcar, fibra y sodio)",69,estimado,fatsecret_mx
+Starbucks,"Tostadas, bagels y molletes",Tostada multicereal con tomate y aceite,1 porción,376,9.9,37.7,19.6,2.4,3.0,768,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Bebidas,San Pellegrino Aranciata,1 porción,116,0.3,26.7,0.0,26.7,0,0,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada multicereal c/M&M fresa,1 porción,379,9.6,53.8,12.8,18.6,4.3,448,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel con M&M Fresa,1 porción,355,8.4,49.3,12.6,19.8,3.9,364,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel con Tomate y Aceite,1 porción,352,8.7,33.2,19.4,3.7,2.7,684,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel con Aceite y Sal,1 porción,344,8.2,31.5,19.4,2.0,2.5,680,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel con Crema Queso,1 porción,315,11.1,32.6,14.3,3.1,2.6,432,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes","Bagel con Jamón Ibérico, tomate y aceite",1 porción,423,15.7,33.3,24.2,3.7,2.7,1124,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada Multicereal c/jamon y tomate,1 porción,447,16.9,37.8,24.4,2.4,3.0,1208,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Repostería y snacks,Napolitana horneada,1 porción,436,7.5,48.6,23.4,19.8,1.5,336,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Macedonia,1 porción,97,1.7,24.6,0.4,20.2,0.7,8,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Bebidas,Kombucha Berry,1 porción,26,0.8,6.5,1.2,4.8,0,12,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana (recalculado (dato inconsistente en la fuente))
+Starbucks,Sándwiches y salados,SW Egg muffin,1 porción,329,16.0,27.8,17.8,3.1,2.2,516,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Patatas Fritas Marina Oliva,1 porción,345,5.0,35.4,19.7,0.3,1.1,192,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Repostería y snacks,Bloomer Pavo Arándanos,1 porción,362,21.1,46.6,9.7,9.2,1.4,808,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Repostería y snacks,Biscotti,1 porción,125,3.8,19.9,3.3,10.5,0.6,120,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,Repostería y snacks,Palomitas Sal Himalaya,1 porción,129,2.4,18.5,4.5,0.6,0.6,348,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada M & Mermelada Fresa,1 porción,370,8.4,62.4,8.9,18.7,5.0,348,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Focaccia de Pollo,1 porción,548,27.1,52.9,24.1,5.0,4.2,956,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Repostería y snacks,Muffin Vainilla s/g,1 porción,492,3.9,52.0,29.9,32.4,1.6,236,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Croissants,Croissant Multicereal,1 porción,353,8.0,35.2,19.2,6.0,2.8,312,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Repostería y snacks,Glaseado,1 porción,318,4.0,30.1,20.3,10.5,0.9,156,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Bebidas,Agua Solán 50 cl,1 porción,0,0.0,0.0,0.0,0.0,0,20,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Bebidas,Agua Solán 75 cl,1 porción,0,0.0,0.0,0.0,0.0,0,0,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Bebidas,Agua San Pellegrino,1 porción,0,0.0,0.0,0.0,0.0,0,0,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Croissants,Croissant horneado,1 porción,289,5.8,30.7,15.4,7.3,0.9,264,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Repostería y snacks,White Chuk Macadamia Nut Cookie,1 porción,424,4.4,47.9,23.6,31.3,1.4,204,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Toastie V Quesos,1 porción,378,17.4,41.1,15.7,2.6,3.3,700,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Repostería y snacks,Organic Corn Sweet & Salty30 grs,1 porción,144,1.5,18.7,6.7,10.0,0.6,168,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Yogur Maracuyá y Mango,1 porción,255,5.7,31.5,12.3,24.1,0.9,60,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cinnamon Roll Horneado,1 porción,469,8.5,62.3,22.2,31.1,1.9,356,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Sándwiches y salados,SW CLC Pollo & Bacon,1 porción,389,14.8,27.6,22.9,4.5,2.2,936,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Bocadillo Jamón&Manchego c/tom rall,1 porción,413,23.1,46.8,14.5,1.3,3.7,1196,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Bocadillo Jamón c/tomate rallado,1 porción,321,17.8,46.6,6.7,1.1,3.7,1008,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada c/aceite y sal,1 porción,358,8.2,44.6,15.7,0.9,3.6,664,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada c/aceite y tomate,1 porción,366,8.7,46.3,15.8,2.5,3.7,348,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes","Tostada c/jamón, tomate y aceite",1 porción,438,15.7,46.3,20.5,2.5,3.7,788,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada c/queso crema,1 porción,276,9.6,45.1,5.7,1.4,3.6,380,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada,1 porción,223,8.2,44.6,0.7,0.9,3.6,344,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Bebidas,Limonada Juice,1 porción,76,0.3,18.5,0.0,18.5,0,12,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Bebidas,Ginger Shot,1 porción,57,0.6,13.7,0.0,13.3,0,4,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Repostería y snacks,Caramel Waffle,1 porción,355,3.4,53.0,14.0,29.6,1.6,232,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada multicereal c/crema queso,1 porción,285,10.8,36.5,9.5,1.3,2.9,480,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada multicereal,1 porción,232,9.4,36.0,4.5,0.8,2.9,444,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Tostada multicereal c/aceite,1 porción,367,9.4,36.0,19.5,0.8,2.9,764,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Ensalada Fusilli Albahaca,1 porción,858,22.8,86.1,45.5,5.2,2.6,492,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),109,estimado,pdf_espana
+Starbucks,Bebidas,Smoothie APPLE RASPBERRY,1 porción,188,2.0,41.6,0.0,41.6,0,12,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),95,estimado,pdf_espana
+Starbucks,Bebidas,Smoothie TROPICAL,1 porción,178,2.0,40.9,0.0,40.9,0,12,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),95,estimado,pdf_espana
+Starbucks,Bebidas,Bagel Salmón y Aguacate,1 porción,429,19.6,36.9,21.6,3.0,0,956,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Cereales,1 porción,208,8.2,31.5,4.3,2.0,2.5,360,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Quinoa,1 porción,248,8.2,41.2,5.2,9.0,3.3,232,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Quinoa con M&M Fresa,1 porción,395,8.4,59.1,13.5,26.8,4.7,236,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Quinoa con Tomate y Aceite,1 porción,392,8.7,43.0,20.4,10.6,3.4,556,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Quinoa aceite y sal,1 porción,383,8.2,41.2,20.2,9.0,3.3,552,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Quinoa con Crema Queso,1 porción,355,11.1,42.3,15.2,10.1,3.4,304,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes","Bagel Quinoa con Jamón Ibérico, tomate",1 porción,463,15.7,43.0,25.1,10.7,3.4,996,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Repostería y snacks,Meteoritos,1 porción,178,0.2,44.5,0.2,33.5,1.3,56,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,Croissants,Croissant Con M&M Frambuesa,1 porción,425,6.1,45.2,23.7,21.8,1.4,268,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Croissants,Croissant Con M&M Fresa,1 porción,425,6.0,45.8,23.6,22.4,1.4,268,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Croissants,Croissant Con Queso Fresco,1 porción,332,7.2,28.5,20.4,5.2,0.9,300,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Croissants,Croissant Multicereales Con M&M Fresa,1 porción,500,8.2,53.0,27.4,23.8,4.2,316,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Croissants,(No)Croissant Multicere Con Queso Fresco,1 porción,406,9.4,35.7,24.2,6.5,1.1,348,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Croissants,(No)Croissant Multicere M&M Frambuesa,1 porción,499,8.3,52.4,27.5,23.2,1.6,316,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Bebidas,Zumo Naranja Bot,1 porción,145,2.0,33.0,0.3,33.0,0,12,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Repostería y snacks,Rasberry Cake,1 porción,293,2.9,54.0,7.4,33.0,1.6,152,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cake Pop Cookies & Cream,1 porción,167,1.5,18.7,9.5,13.9,0.6,84,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),49,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Huevo & Bacon,1 porción,387,19.9,21.2,24.8,3.6,1.7,968,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Repostería y snacks,Chocobyte Almendra,1 porción,224,4.8,15.8,15.0,15.8,0.5,128,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Repostería y snacks,Chocobyte Anacardo,1 porción,222,3.8,21.2,13.4,14.1,0.6,16,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Yogur Maracuyá y Mango 150gr,1 porción,255,5.7,31.5,12.3,24.1,0.9,60,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Repostería y snacks,Hojaldre de manzana,1 porción,378,7.2,48.3,16.8,22.1,1.4,228,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Bowl Matcha Chia,1 porción,223,4.0,26.0,10.8,22.6,0.8,64,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Bebidas,Tostada Blanca Aguacate,1 porción,299,9.0,46.1,8.3,1.3,0,808,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Bebidas,Tostada Blanca Aguacate Y Salmon,1 porción,412,20.8,46.4,15.5,1.6,0,988,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Bebidas,Tostada Blanca Aguacate Y Jamon Coc.,1 porción,348,18.0,46.5,9.6,1.7,0,768,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Bebidas,Tostada Cerales Aguacate,1 porción,308,10.2,37.5,12.2,1.2,0,908,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Bebidas,Tostada Cerales Aguacate Y Salmon,1 porción,421,22.0,37.8,19.4,1.5,0,1088,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Bebidas,Tostada Cerales Aguacate Y Jamon Coc.,1 porción,357,19.2,37.9,13.4,1.6,0,868,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Focaccia Mortadela,1 porción,796,34.1,58.7,46.5,2.5,4.7,1716,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Focaccia Pastrami,1 porción,651,39.5,60.8,27.5,4.6,4.9,1832,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Bebidas,Tostada Blanca Aguacate Cana/Bale/Islapt,1 porción,354,9.5,47.2,14.1,1.6,0,852,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Asian Bowl,1 porción,366,14.6,46.5,12.4,19.5,1.4,1348,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Croissants,Cruffin Tiramisu,1 porción,340,7.1,31.1,20.5,8.6,0.9,252,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cookie Dark Choco,1 porción,519,7.7,66.2,24.4,40.5,2.0,224,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cookie Choco Blanco y Nueces Macadamia,1 porción,539,7.0,66.2,27.1,40.3,2.0,384,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cookie Triple Choco,1 porción,527,6.9,67.2,25.2,39.2,2.0,380,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,Repostería y snacks,Glaseado Cheesecake,1 porción,342,4.3,36.1,19.7,23.0,1.1,320,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Pajarita,1 porción,308,4.9,26.4,20.0,7.2,0.8,272,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Gourmet Gianduja Cake,1 porción,381,7.5,35.1,22.4,25.8,1.1,12,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Gourmet Cheesecake,1 porción,258,4.8,31.0,12.6,20.8,0.9,88,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Croissants,Gourmet Croissant de pistacho,1 porción,391,8.4,37.6,22.1,12.4,1.1,360,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Yogur Proteína,1 porción,187,13.9,24.0,3.9,24.0,0.7,128,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Hummus Original,1 porción,436,10.5,31.1,29.0,4.0,0.9,744,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Overnight arándanos,1 porción,268,6.8,32.2,11.2,18.4,1.0,156,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Repostería y snacks,Palmeritas S/G,1 porción,237,1.0,34.5,10.5,10.0,1.0,280,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),55,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cinnamon Bites S/G,1 porción,230,1.1,30.0,11.0,9.5,0.9,300,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Banana Bread S/G,1 porción,367,2.6,59.0,13.2,30.0,1.8,392,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Brownie s/azúcar S/G,1 porción,212,3.7,28.2,10.8,0.3,0.8,160,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Croissants,Gourmet Croissant de crema y frutos rojo,1 porción,354,7.2,38.1,18.9,12.2,1.1,308,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Gourmet Bagel de salmón,1 porción,419,21.6,45.4,16.4,12.2,3.6,900,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Gourmet Bagel de Roastbeef,1 porción,239,17.9,7.3,15.0,5.6,0.6,484,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Gourmet Focaccia Finocciona,1 porción,624,25.1,59.7,30.9,3.0,4.8,1856,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Croissants,Gourmet Croissant Caprese,1 porción,462,15.5,31.2,30.0,6.8,0.9,564,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Croissants,Gourmet Croissant Benedict,1 porción,599,17.6,39.2,41.1,5.1,1.2,1472,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),85,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Gourmet Bocadillo jamón y manchego,1 porción,447,23.9,35.5,22.5,0.8,2.8,1196,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Repostería y snacks,Goumet Crème Brûlée,1 porción,443,3.8,45.3,27.0,44.4,1.4,72,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Bebidas,Appletizer,1 porción,115,0.0,27.0,0.0,25.5,0,0,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,Sándwiches y salados,SW Club Deluxe,1 porción,486,21.1,38.5,26.2,3.5,3.1,912,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,SW Italian Club,1 porción,434,19.8,44.3,19.4,3.8,3.5,988,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,SW Salmón @ Wasabi,1 porción,481,16.5,42.3,26.5,3.4,3.4,940,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,"Focaccia de aceitunas, pollo y tomate",1 porción,278,12.8,41.6,6.3,2.4,3.3,724,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Ensalada de la Huerta,1 porción,288,2.2,6.8,27.0,3.6,0.2,200,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),109,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Delicia Tartufata,1 porción,492,18.4,45.1,25.9,7.9,1.4,860,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Bocadillo Pulled Pork,1 porción,496,20.0,52.0,22.6,11.4,4.2,1128,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Bebidas,Agua con gas VICHY,1 porción,0,0.0,0.0,0.0,0.0,0,0,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Ensalada Hummus de Remolacha y Edamame,1 porción,249,8.1,7.3,19.1,1.2,0.2,388,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),109,estimado,pdf_espana
+Starbucks,Bebidas,Ensalada de Hummus de Aguacate y Pollo,1 porción,229,7.2,9.1,16.6,3.4,0,384,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),40,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Ensalada Italiana con Pesto,1 porción,359,11.9,25.7,22.2,2.2,0.8,1260,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),109,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Brioche pollo asado,1 porción,348,24.3,34.4,12.4,10.3,2.7,1052,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Brioche de Pavo y Frambuesa,1 porción,200,19.9,50.8,8.9,22.5,4.1,700,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana (recalculado (dato inconsistente en la fuente))
+Starbucks,Sándwiches y salados,Gourmet Bocadillo semillas jamón ibérico,1 porción,310,15.8,35.2,10.8,0.5,2.8,912,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes","Bagel Jamón, Queso y huevo",1 porción,421,28.3,37.6,17.1,9.0,3.0,864,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Gazpacho,1 porción,175,2.0,7.3,14.8,6.6,0.2,1028,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Pulled Chicken Bao Negro,1 porción,230,10.4,30.7,7.2,4.0,2.5,564,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Pulled Pork Bao Blanco,1 porción,222,9.1,27.8,8.1,6.5,2.2,452,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Ensalada Pesto Rosso,1 porción,972,35.2,137.0,29.5,11.1,4.1,1340,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),109,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Ensalada Queso Cabra y Arándanos,1 porción,379,7.8,12.8,32.8,5.6,0.4,640,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),109,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Wrap Sushi,1 porción,489,17.6,59.6,19.3,4.0,4.8,4552,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae); sal parece error de la fuente,129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,"Wrap Pollo, Bacon y Queso",1 porción,451,25.9,44.6,18.1,3.0,3.6,1576,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Sándwich Pollo Curry,1 porción,411,14.5,46.9,18.0,5.0,3.7,860,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,"Ensaladas, bowls y yogures",Bowl Chia y açai,1 porción,240,6.4,17.0,15.5,6.4,0.5,128,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),79,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cake Pop Flamenco,1 porción,174,1.4,18.1,10.4,14.8,0.5,44,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),49,estimado,pdf_espana
+Starbucks,Repostería y snacks,Cake Pop Bearista,1 porción,169,0.6,17.9,10.2,14.0,0.5,16,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),49,estimado,pdf_espana
+Starbucks,Repostería y snacks,Frambuesas con Chocolate,1 porción,476,5.7,48.1,27.3,44.2,1.4,64,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Bagel Quinoa y Salmón,1 porción,419,21.6,45.4,16.4,12.2,3.6,900,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Repostería y snacks,Pumpkin Cake Pop,1 porción,163,1.3,17.9,9.5,14.4,0.5,44,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),49,estimado,pdf_espana
+Starbucks,Repostería y snacks,Black Cat Cake Pop,1 porción,154,1.2,18.9,8.1,15.4,0.6,32,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),49,estimado,pdf_espana
+Starbucks,Repostería y snacks,Maple Bun,1 porción,323,6.4,49.0,11.0,21.0,1.5,136,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,Repostería y snacks,Pumpkin Bun,1 porción,276,5.8,44.0,8.4,22.0,1.3,140,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Pa amb tomaquet,1 porción,376,9.1,48.5,15.9,3.5,3.9,348,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Pa amb fuet,1 porción,593,22.6,48.8,33.9,3.7,3.9,1108,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Sándwiches y salados,Bocadillo Fuet,1 porción,450,22.7,46.4,19.0,0.8,3.7,1240,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),129,estimado,pdf_espana
+Starbucks,Repostería y snacks,Xuxo,1 porción,291,2.6,21.1,21.8,7.0,0.6,180,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),89,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Mollete Jamón y Salmorejo,1 porción,452,16.2,47.0,21.3,0.8,3.8,928,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Mollete mantequilla & Mermelada,1 porción,308,8.0,64.8,8.8,18.6,5.2,404,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana (recalculado (dato inconsistente en la fuente))
+Starbucks,"Tostadas, bagels y molletes",Mollete jamón iberico y tomate,1 porción,460,16.7,48.8,21.4,2.5,3.9,932,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Mollete tomate,1 porción,375,8.3,48.7,15.7,2.4,3.9,724,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Mollete aceite y sal,1 porción,366,7.8,47.0,15.6,0.8,3.8,720,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,"Tostadas, bagels y molletes",Pan tumaca con Jamón,1 porción,461,17.5,48.5,21.6,3.5,3.9,876,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),99,estimado,pdf_espana
+Starbucks,Bebidas,Yuzz,1 porción,62,0.3,12.2,0.0,9.9,0,264,sodio derivado de sal (sal g x 400); fibra estimada (la fuente no la trae),69,estimado,pdf_espana (recalculado (dato inconsistente en la fuente))

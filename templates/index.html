@@ -100,6 +100,13 @@
   .macro { border-left: 3px solid; padding: 2px 0 2px 12px; }
   .macro b { display: block; font: 700 1.35rem var(--cond); }
   .macro span { color: var(--muted); font-size: .85rem; }
+  .micros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; padding: 10px 12px; background: var(--surface-2); border-radius: 8px; }
+  .micros b { display: block; font: 500 1rem var(--mono); }
+  .micros span { color: var(--muted); font-size: .8rem; }
+  .sug { margin: 12px 0; }
+  .sug .lbl { margin-bottom: 6px; }
+  .sug .chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; }
+  .sug .chip { flex-shrink: 0; padding: 6px 12px; font-size: .9rem; }
   .line { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
   .line .nm { min-width: 0; }
   .line .pr { font: .85rem var(--mono); color: var(--muted); margin-left: 6px; }
@@ -139,6 +146,12 @@
     <div class="b-tools">
       <input class="search" id="b-q" type="search" placeholder="Buscar en todos los restaurantes…">
       <select class="select" id="b-tipo"></select>
+      <select class="select" id="b-clase">
+        <option value="comida">Comida</option>
+        <option value="bebida">Bebidas</option>
+        <option value="salsa">Salsas y extras</option>
+        <option value="">Todo</option>
+      </select>
       <select class="select" id="b-orden">
         <option value="ratio">Más proteína por caloría</option>
         <option value="prot">Más proteína</option>
@@ -164,6 +177,7 @@
     <button class="link" id="s-clear">VACIAR</button>
   </div>
   <div id="s-body" hidden></div>
+  <div class="sug" id="s-sug" hidden></div>
   <button class="copy" id="s-copy">Copiar pedido</button>
 </section>
 
@@ -177,6 +191,8 @@ const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 const lowerFirst = s => s.charAt(0).toLowerCase() + s.slice(1);
 
 let D = {tipos: [], items: [], chipotle: []};
+const CLASE_CAT = {comida: "Otros", bebida: "Bebidas", salsa: "Salsas y extras", ingrediente: "Ingredientes"};
+const CAT_RANK = {};
 const BY_KEY = {};
 const S = {
   tab: "armar", tipo: null, rest: null, q: "", open: {}, desglose: false,
@@ -207,7 +223,7 @@ function chipotleLines() {
   const prot = c.proteina && part(c.proteina);
   if (!prot) return [];
   const lines = [];
-  const add = (p, name, price) => lines.push({name, price, kcal: p.kcal, p: p.proteina_g, c: p.carbs_g, g: p.grasa_g, qty: 1});
+  const add = (p, name, price) => lines.push({name, price, kcal: p.kcal, p: p.proteina_g, c: p.carbs_g, g: p.grasa_g, a: p.azucar_g, f: p.fibra_g, n: p.sodio_mg, qty: 1});
   add(prot, prot.componente, prot.precio_mxn);
   const f = CHIP_FORMATOS.find(x => x.name === c.formato);
   if (f && f.part && part(f.part)) add(part(f.part), f.part, 0);
@@ -241,7 +257,7 @@ function allLines() {
   Object.entries(S.cart).forEach(([key, qty]) => {
     const i = BY_KEY[key];
     if (!i) return;
-    lines.push({key, name: i.producto, rest: i.restaurante, price: i.precio_mxn, kcal: i.kcal, p: i.proteina_g, c: i.carbs_g, g: i.grasa_g, qty});
+    lines.push({key, name: i.producto, rest: i.restaurante, price: i.precio_mxn, kcal: i.kcal, p: i.proteina_g, c: i.carbs_g, g: i.grasa_g, a: i.azucar_g, f: i.fibra_g, n: i.sodio_mg, qty});
   });
   return lines;
 }
@@ -258,7 +274,7 @@ function orderTitle() {
 
 function renderSum() {
   const lines = allLines();
-  const t = {price: 0, kcal: 0, p: 0, c: 0, g: 0};
+  const t = {price: 0, kcal: 0, p: 0, c: 0, g: 0, a: 0, f: 0, n: 0};
   lines.forEach(l => { for (const k in t) t[k] += l[k] * l.qty; });
   const wrap = document.querySelector(".wrap");
   $("sum").classList.toggle("off", !lines.length);
@@ -269,6 +285,7 @@ function renderSum() {
   $("s-prot").textContent = fmt(t.p) + " g";
   $("s-desg").textContent = (S.desglose ? "▾" : "▸") + " DESGLOSE";
 
+  renderSug();
   const body = $("s-body");
   body.hidden = !S.desglose;
   $("sum").classList.toggle("desg", S.desglose);
@@ -290,12 +307,27 @@ function renderSum() {
       <div class="macro" style="border-color:var(--c)"><b>${fmt(t.c)} g</b><span>Carbs · ${pct(kc)}%</span></div>
       <div class="macro" style="border-color:var(--g)"><b>${fmt(t.g)} g</b><span>Grasa · ${pct(kg)}%</span></div>
     </div>
+    <div class="micros">
+      <div><b>${fmt1(t.a)} g</b><span>Azúcar</span></div>
+      <div><b>${fmt1(t.f)} g</b><span>Fibra</span></div>
+      <div><b>${fmt(t.n)} mg</b><span>Sodio</span></div>
+    </div>
     ${lines.map(l => `
       <div class="line">
         <div class="nm">${esc(l.name)}${l.price ? `<span class="pr">${money(l.price * l.qty)}</span>` : ""}</div>
         <div class="kc">${l.key ? `<span class="qty"><button data-dec="${esc(l.key)}" aria-label="Quitar uno">−</button>${l.qty}<button data-inc="${esc(l.key)}" aria-label="Agregar uno">+</button></span>` : ""}${fmt(l.kcal * l.qty)} kcal</div>
       </div>`).join("")}
     ${t.p > 0 ? `<p class="ratio">${t.price ? fmt1(t.p / (t.price / 10)) + " g de proteína por cada $10 · " : ""}${fmt(t.kcal / t.p)} kcal por gramo de proteína</p>` : ""}`;
+}
+
+// Si el pedido trae hamburguesa, boneless, alitas, etc., sugiere las salsas de ese restaurante (opcional)
+function renderSug() {
+  const rests = [...new Set(Object.keys(S.cart).map(k => BY_KEY[k]).filter(i => i && i.sugiere_salsa).map(i => i.restaurante))];
+  const salsas = D.items.filter(i => i.es_salsa && rests.includes(i.restaurante));
+  const box = $("s-sug");
+  box.hidden = !salsas.length;
+  if (!salsas.length) { box.innerHTML = ""; return; }
+  box.innerHTML = `<span class="lbl">¿Le pones salsa? · opcional</span><div class="chips">${salsas.map(itemChip).join("")}</div>`;
 }
 
 /* ---------- Armar ---------- */
@@ -330,7 +362,7 @@ function itemChip(i) {
 }
 
 function catMeta(cat) {
-  const list = D.items.filter(i => i.restaurante === S.rest && i.categoria === cat);
+  const list = D.items.filter(i => i.restaurante === S.rest && i.cat === cat);
   const sel = list.filter(i => S.cart[i.key]).length;
   return `${sel ? `<em>${sel} elegido${sel > 1 ? "s" : ""}</em> · ` : ""}${list.length}`;
 }
@@ -338,10 +370,10 @@ function catMeta(cat) {
 function renderMenu() {
   const q = norm(S.q.trim());
   const items = D.items.filter(i => i.restaurante === S.rest && (!q || norm(i.producto + " " + i.categoria).includes(q)));
-  const cats = [...new Set(items.map(i => i.categoria))];
+  const cats = [...new Set(items.map(i => i.cat))].sort((a, b) => CAT_RANK[a] - CAT_RANK[b]);
   if (!cats.length) { $("m-cats").innerHTML = '<p class="empty">No hay platillos con esa búsqueda.</p>'; return; }
   $("m-cats").innerHTML = cats.map(cat => {
-    const list = items.filter(i => i.categoria === cat);
+    const list = items.filter(i => i.cat === cat);
     const open = q || S.open[S.rest + "|" + cat];
     return `<div class="cat${open ? " open" : ""}">
       <button class="cat-h" data-cat="${esc(cat)}"><span><span class="arrow">▸</span>${esc(cat)}</span><span class="meta">${catMeta(cat)}</span></button>
@@ -394,8 +426,9 @@ function renderBuscar() {
     precio: (a, b) => (a.precio_mxn || Infinity) - (b.precio_mxn || Infinity),
     pxp: (a, b) => (b.precio_mxn ? b.proteina_g / b.precio_mxn : 0) - (a.precio_mxn ? a.proteina_g / a.precio_mxn : 0),
   };
+  const clase = $("b-clase").value;
   const list = D.items
-    .filter(i => (!tipo || tipo.restaurantes.includes(i.restaurante)) && (!q || norm(`${i.producto} ${i.categoria} ${i.restaurante}`).includes(q)))
+    .filter(i => (!clase || i.clase === clase) && (!tipo || tipo.restaurantes.includes(i.restaurante)) && (!q || norm(`${i.producto} ${i.categoria} ${i.restaurante}`).includes(q)))
     .sort(sorters[$("b-orden").value]);
   const shown = list.slice(0, 150);
   $("b-count").textContent = list.length > shown.length ? `Mostrando ${shown.length} de ${list.length} platillos` : `${list.length} platillos`;
@@ -507,16 +540,16 @@ document.addEventListener("input", e => {
   if (e.target.id === "m-q") { S.q = e.target.value; renderMenu(); }
   if (e.target.id === "b-q") renderBuscar();
 });
-["b-tipo", "b-orden"].forEach(id => $(id).addEventListener("change", renderBuscar));
+["b-tipo", "b-clase", "b-orden"].forEach(id => $(id).addEventListener("change", renderBuscar));
 
 function copyOrder(btn) {
   const lines = allLines();
-  const t = {price: 0, kcal: 0, p: 0, c: 0, g: 0};
+  const t = {price: 0, kcal: 0, p: 0, c: 0, g: 0, a: 0, f: 0, n: 0};
   lines.forEach(l => { for (const k in t) t[k] += l[k] * l.qty; });
   const text = [
     orderTitle(),
     ...lines.map(l => `- ${l.qty > 1 ? l.qty + "× " : ""}${l.name}${l.rest ? " (" + l.rest + ")" : ""}${l.price ? " " + money(l.price * l.qty) : ""}`),
-    `Total: ${money(t.price)} · ${fmt(t.kcal)} kcal · P ${fmt(t.p)} g · C ${fmt(t.c)} g · G ${fmt(t.g)} g`,
+    `Total: ${money(t.price)} · ${fmt(t.kcal)} kcal · P ${fmt(t.p)} g · C ${fmt(t.c)} g · G ${fmt(t.g)} g · Azúcar ${fmt1(t.a)} g · Fibra ${fmt1(t.f)} g · Sodio ${fmt(t.n)} mg`,
   ].join("\n");
   const done = () => { btn.textContent = "¡Copiado!"; setTimeout(() => btn.textContent = "Copiar pedido", 1500); };
   if (navigator.clipboard && window.isSecureContext) {
@@ -531,6 +564,17 @@ function copyOrder(btn) {
 fetch("api/data").then(r => r.json()).then(data => {
   D = data;
   D.items.forEach(i => BY_KEY[i.key] = i);
+  // Si un platillo no es de la misma clase que su categoría (p. ej. un café dentro de "McValue"),
+  // se muestra en "Bebidas" o "Salsas y extras"
+  const votos = {};
+  D.items.forEach(i => { const k = i.restaurante + "|" + i.categoria; (votos[k] = votos[k] || {})[i.clase] = (votos[k][i.clase] || 0) + 1; });
+  const RANK = {comida: 0, ingrediente: 1, bebida: 2, salsa: 3};
+  D.items.forEach(i => {
+    const v = votos[i.restaurante + "|" + i.categoria];
+    const mayor = Object.keys(v).sort((a, b) => v[b] - v[a])[0];
+    i.cat = i.clase === mayor ? i.categoria : CLASE_CAT[i.clase];
+    CAT_RANK[i.cat] = Math.min(CAT_RANK[i.cat] ?? 9, RANK[i.clase === mayor ? mayor : i.clase]);
+  });
   if (S.tipo && !D.tipos.some(t => t.tipo === S.tipo)) { S.tipo = null; S.rest = null; }
   const restaurantes = D.tipos.reduce((n, t) => n + t.restaurantes.length, 0);
   $("facts").innerHTML = `<span><em>${fmt(D.items.length)}</em> platillos</span><span><em>${restaurantes}</em> restaurantes</span><span>Macros y precios en MXN</span>`;
