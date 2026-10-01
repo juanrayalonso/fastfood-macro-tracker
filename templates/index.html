@@ -3,196 +3,505 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Macros Fast Food</title>
+<title>Armador de Platillos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans+Condensed:wght@500;600;700&family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f6f5f2; --card: #ffffff; --text: #1d1d1b; --muted: #6b6a66;
-    --line: #e4e2dc; --accent: #d9480f; --accent-soft: #fff0e8;
-    --p: #2b8a3e; --c: #1971c2; --g: #e8590c;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #161614; --card: #22211f; --text: #f1f0ec; --muted: #a3a19b;
-      --line: #35342f; --accent: #ff8a4c; --accent-soft: #3a2519;
-      --p: #69db7c; --c: #74c0fc; --g: #ffa94d;
-    }
+    color-scheme: dark;
+    --bg: #141412; --surface: #1c1c19; --surface-2: #24241f; --line: #33332d;
+    --text: #ecebe2; --muted: #a09f94; --faint: #6c6b63;
+    --sel-bg: #ecebe2; --sel-text: #161613;
+    --accent: #e8584a; --on-accent: #1a1a17;
+    --p: #8fbf8a; --c: #e0b04a; --g: #c98aac;
+    --cond: "Fira Sans Condensed", "Arial Narrow", sans-serif;
+    --mono: "Fira Code", ui-monospace, Consolas, monospace;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
-  header { padding: 20px 16px 8px; max-width: 1200px; margin: 0 auto; }
-  h1 { margin: 0; font-size: 1.5rem; }
-  header p { margin: 4px 0 0; color: var(--muted); font-size: .9rem; }
-  main { display: grid; grid-template-columns: 1fr 340px; gap: 16px; padding: 12px 16px 120px; max-width: 1200px; margin: 0 auto; }
-  .controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-  select, input { font: inherit; padding: 9px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); }
-  input[type=search] { flex: 1 1 200px; min-width: 0; }
-  .count { color: var(--muted); font-size: .85rem; margin-bottom: 8px; }
-  .item { display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; }
-  .item .info { flex: 1; min-width: 0; }
-  .item .name { font-weight: 600; }
-  .item .meta { color: var(--muted); font-size: .8rem; margin-top: 2px; }
-  .macros { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .85rem; margin-top: 4px; font-variant-numeric: tabular-nums; }
-  .kcal { font-weight: 700; }
-  .p { color: var(--p); } .c { color: var(--c); } .g { color: var(--g); }
-  button { font: inherit; cursor: pointer; border: none; border-radius: 8px; }
-  .add { background: var(--accent); color: #fff; width: 40px; height: 40px; font-size: 1.4rem; flex-shrink: 0; }
-  .add:active { transform: scale(.95); }
-  aside { position: sticky; top: 12px; align-self: start; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
-  aside h2 { margin: 0 0 10px; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; }
-  .clear { background: none; color: var(--muted); font-size: .85rem; text-decoration: underline; }
-  .totals { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px; }
-  .tot { background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; }
-  .tot b { display: block; font-size: 1.25rem; font-variant-numeric: tabular-nums; }
-  .tot span { font-size: .75rem; color: var(--muted); }
-  .cart-item { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-top: 1px solid var(--line); font-size: .88rem; }
-  .cart-item .info { flex: 1; min-width: 0; }
-  .cart-item .meta { color: var(--muted); font-size: .76rem; }
-  .qty { display: flex; align-items: center; gap: 6px; }
-  .qty button { width: 28px; height: 28px; background: var(--line); color: var(--text); }
-  .empty { color: var(--muted); font-size: .9rem; }
-  .bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 12px; background: var(--line); }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.45 "Fira Sans", system-ui, sans-serif; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 32px 16px 280px; }
+  button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; padding: 0; }
+
+  .eyebrow { font: 500 .8rem var(--mono); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+  h1 { font: 700 clamp(2.2rem, 7vw, 3.1rem)/1.05 var(--cond); margin: 10px 0 12px; }
+  .lead { color: var(--muted); max-width: 620px; margin: 0 0 14px; }
+  .facts { font: .92rem var(--mono); display: flex; flex-wrap: wrap; gap: 4px 24px; }
+  .facts em { color: var(--accent); font-style: normal; }
+
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 28px 0 8px; }
+  .tab { font: 600 1.05rem var(--cond); color: var(--muted); padding: 10px 16px 12px; border-bottom: 3px solid transparent; margin-bottom: -1px; }
+  .tab.on { color: var(--text); border-color: var(--accent); }
+
+  .step { margin-top: 30px; scroll-margin-top: 16px; }
+  .step-h { display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px; }
+  .step-n { font: 500 .78rem var(--mono); letter-spacing: .1em; color: var(--accent); }
+  .step-h h2 { font: 700 1.75rem/1.1 var(--cond); margin: 0; }
+  .note { color: var(--muted); margin: -4px 0 12px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(178px, 1fr)); gap: 10px; }
+  .card { text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; transition: border-color .15s; }
+  .card:hover { border-color: var(--faint); }
+  .card.on { border-color: var(--accent); background: var(--surface-2); }
+  .card b { display: block; font: 600 1.1rem var(--cond); }
+  .card span { display: block; color: var(--muted); font-size: .88rem; margin-top: 2px; }
+  .card .mono { font: .8rem var(--mono); color: var(--muted); margin-top: 6px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { border: 1px solid var(--line); border-radius: 999px; padding: 8px 15px; background: var(--surface); text-align: left; transition: background .15s, border-color .15s; }
+  .chip:hover { border-color: var(--faint); }
+  .chip .k { font: .82rem var(--mono); color: var(--muted); margin-left: 6px; }
+  .chip .x { font: .82rem var(--mono); color: var(--c); margin-left: 6px; }
+  .chip.on { background: var(--sel-bg); color: var(--sel-text); border-color: var(--sel-bg); }
+  .chip.on .k { color: #55544c; }
+  .chip.on .x { color: #8a5a00; }
+  .chip:disabled { opacity: .35; cursor: not-allowed; }
+  .chips + .chips { margin-top: 10px; }
+
+  .search { width: 100%; font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 11px 14px; margin-bottom: 12px; }
+  .search:focus, .select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .cat { border-top: 1px solid var(--line); }
+  .cat:last-child { border-bottom: 1px solid var(--line); }
+  .cat-h { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 13px 2px; font: 600 1.15rem var(--cond); }
+  .cat-h .meta { font: .8rem var(--mono); color: var(--muted); }
+  .cat-h .meta em { color: var(--accent); font-style: normal; }
+  .cat-h .arrow { display: inline-block; width: 1.1em; color: var(--muted); transition: transform .15s; }
+  .cat.open .arrow { transform: rotate(90deg); }
+  .cat-b { padding: 2px 0 16px; }
+  .empty { color: var(--muted); padding: 10px 0; }
+
+  .b-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 12px; }
+  .b-tools .search { flex: 1 1 220px; margin: 0; }
+  .select { font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .row .info { flex: 1; min-width: 0; }
+  .row .name { font-weight: 500; }
+  .row .meta { color: var(--muted); font-size: .84rem; }
+  .row .mac { font: .8rem var(--mono); color: var(--muted); margin-top: 3px; }
+  .row .mac b { color: var(--text); font-weight: 500; }
+  .add { flex-shrink: 0; width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line); font-size: 1.2rem; }
+  .add.on { background: var(--sel-bg); color: var(--sel-text); border-color: var(--sel-bg); }
+  .count { font: .8rem var(--mono); color: var(--muted); }
+
+  /* Tarjeta de resumen */
+  .sum { position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); width: min(828px, calc(100% - 24px)); max-height: calc(100vh - 24px); overflow-y: auto; background: #1b1b18; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; box-shadow: 0 -8px 30px rgba(0,0,0,.45); z-index: 20; }
+  .sum-title { font: 600 1.12rem/1.25 var(--cond); margin-bottom: 10px; }
+  .sum-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .lbl { display: block; font: 500 .74rem var(--mono); letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+  .sum-stats b { font: 700 1.7rem/1.15 var(--cond); }
+  .sum-stats .price { color: var(--accent); }
+  .sum-row { display: flex; justify-content: space-between; align-items: center; margin: 10px 0 12px; }
+  .link { font: 500 .78rem var(--mono); letter-spacing: .1em; color: var(--muted); }
+  .link:hover { color: var(--text); }
+  .bar { display: flex; height: 12px; border-radius: 999px; overflow: hidden; background: var(--line); gap: 2px; margin: 4px 0 12px; }
   .bar div { height: 100%; }
-  .toggle { display: none; }
-  @media (max-width: 800px) {
-    main { grid-template-columns: 1fr; }
-    aside { position: fixed; left: 0; right: 0; bottom: 0; top: auto; border-radius: 14px 14px 0 0; max-height: 70vh; overflow-y: auto; transform: translateY(calc(100% - 64px)); transition: transform .25s; z-index: 10; box-shadow: 0 -4px 20px rgba(0,0,0,.15); }
-    aside.open { transform: translateY(0); }
-    .toggle { display: inline; background: none; color: var(--accent); font-weight: 600; }
+  .macros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; }
+  .macro { border-left: 3px solid; padding: 2px 0 2px 12px; }
+  .macro b { display: block; font: 700 1.35rem var(--cond); }
+  .macro span { color: var(--muted); font-size: .85rem; }
+  .line { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .line .nm { min-width: 0; }
+  .line .pr { font: .85rem var(--mono); color: var(--muted); margin-left: 6px; }
+  .line .kc { font: .9rem var(--mono); color: var(--muted); white-space: nowrap; }
+  .qty { display: inline-flex; align-items: center; gap: 6px; margin-right: 10px; font-family: var(--mono); font-size: .85rem; }
+  .qty button { width: 24px; height: 24px; border-radius: 6px; background: var(--surface-2); }
+  .ratio { color: var(--muted); font-size: .9rem; margin: 12px 0 2px; }
+  .copy { width: 100%; margin-top: 4px; background: var(--accent); color: var(--on-accent); font: 600 1.1rem var(--cond); padding: 13px; border-radius: 8px; }
+  .copy:disabled { opacity: .45; cursor: default; }
+
+  @media (max-width: 560px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+    .sum-stats b { font-size: 1.4rem; }
+    .step-h h2 { font-size: 1.5rem; }
+    .sum { padding: 12px 14px; bottom: 8px; width: calc(100% - 16px); }
+    .sum-title { font-size: 1rem; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .sum.desg .sum-title { display: block; }
+    .sum-row { margin: 6px 0 8px; }
+    .copy { padding: 10px; }
   }
 </style>
 </head>
 <body>
-<header>
-  <h1>Macros Fast Food</h1>
-  <p>Elige un restaurante, agrega platillos y ve el total de tu comida.</p>
-</header>
-<main>
-  <section>
-    <div class="controls">
-      <select id="restaurante">
-        <option value="">Todos los restaurantes</option>
-        {% for r in restaurantes %}<option>{{ r }}</option>{% endfor %}
-      </select>
-      <select id="categoria"><option value="">Todas las categorías</option></select>
-      <select id="orden">
-        <option value="nombre">Ordenar: nombre</option>
-        <option value="proteina_desc">Más proteína</option>
-        <option value="kcal_asc">Menos calorías</option>
+<div class="wrap">
+  <div class="eyebrow">Macros de comida rápida</div>
+  <h1>Armador de platillos</h1>
+  <p class="lead">Elige el tipo de restaurante, el lugar y lo que vas a pedir. El precio y los macros se suman al instante.</p>
+  <div class="facts" id="facts"></div>
+
+  <nav class="tabs">
+    <button class="tab on" data-tab="armar">Armar</button>
+    <button class="tab" data-tab="buscar">Buscador</button>
+  </nav>
+
+  <div id="armar"></div>
+  <div id="buscar" hidden>
+    <div class="b-tools">
+      <input class="search" id="b-q" type="search" placeholder="Buscar en todos los restaurantes…">
+      <select class="select" id="b-tipo"></select>
+      <select class="select" id="b-orden">
         <option value="ratio">Más proteína por caloría</option>
-        <option value="precio_asc">Más barato</option>
+        <option value="prot">Más proteína</option>
+        <option value="kcal">Menos calorías</option>
+        <option value="precio">Más barato</option>
+        <option value="pxp">Más proteína por peso</option>
       </select>
-      <input type="search" id="buscar" placeholder="Buscar platillo…">
     </div>
-    <div class="count" id="count"></div>
-    <div id="lista"></div>
-  </section>
-  <aside id="panel">
-    <h2><span>Mi comida <button class="toggle" id="toggle">ver</button></span><button class="clear" id="limpiar">Vaciar</button></h2>
-    <div class="totals">
-      <div class="tot"><b id="t-kcal">0</b><span>kcal</span></div>
-      <div class="tot"><b id="t-precio">$0</b><span>MXN</span></div>
-      <div class="tot"><b id="t-p" class="p">0 g</b><span>Proteína</span></div>
-      <div class="tot"><b id="t-c" class="c">0 g</b><span>Carbohidratos</span></div>
-      <div class="tot"><b id="t-g" class="g">0 g</b><span>Grasa</span></div>
-      <div class="tot"><b id="t-s">0 mg</b><span>Sodio</span></div>
-    </div>
-    <div class="bar" id="bar"></div>
-    <div id="carrito"></div>
-  </aside>
-</main>
+    <div class="count" id="b-count"></div>
+    <div id="b-list"></div>
+  </div>
+</div>
+
+<section class="sum" id="sum">
+  <div class="sum-title" id="s-title"></div>
+  <div class="sum-stats">
+    <div><span class="lbl">Total</span><b class="price" id="s-price"></b></div>
+    <div><span class="lbl">Kcal</span><b id="s-kcal"></b></div>
+    <div><span class="lbl">Proteína</span><b id="s-prot"></b></div>
+  </div>
+  <div class="sum-row">
+    <button class="link" id="s-desg"></button>
+    <button class="link" id="s-clear">VACIAR</button>
+  </div>
+  <div id="s-body" hidden></div>
+  <button class="copy" id="s-copy">Copiar pedido</button>
+</section>
+
 <script>
 const $ = id => document.getElementById(id);
-let ITEMS = [];
-let cart = {};
-try { cart = JSON.parse(localStorage.getItem("carrito") || "{}"); } catch (e) {}
-
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[ch]));
 const fmt = n => Math.round(n).toLocaleString("es-MX");
 const fmt1 = n => (Math.round(n * 10) / 10).toLocaleString("es-MX");
-const esc = s => s.replace(/[&<>"]/g, ch => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[ch]));
+const money = n => "$" + (Math.round(n * 100) / 100).toLocaleString("es-MX");
+const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+const lowerFirst = s => s.charAt(0).toLowerCase() + s.slice(1);
 
-function save() { try { localStorage.setItem("carrito", JSON.stringify(cart)); } catch (e) {} }
+let D = {tipos: [], items: [], chipotle: []};
+const BY_KEY = {};
+const S = {
+  tab: "armar", tipo: null, rest: null, q: "", open: {}, desglose: false,
+  cart: {},
+  chip: {formato: "Bowl", proteina: null, arroz: null, frijoles: null, top: [], ext: []},
+};
+try { Object.assign(S, JSON.parse(localStorage.getItem("armador") || "{}")); } catch (e) {}
+function save() {
+  try { localStorage.setItem("armador", JSON.stringify({tipo: S.tipo, rest: S.rest, cart: S.cart, chip: S.chip})); } catch (e) {}
+}
 
-function filtered() {
-  const r = $("restaurante").value, c = $("categoria").value;
-  const q = $("buscar").value.trim().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-  let list = ITEMS.filter(i =>
-    (!r || i.restaurante === r) && (!c || i.categoria === c) &&
-    (!q || (i.producto + " " + i.categoria).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").includes(q)));
-  const o = $("orden").value;
-  const sorters = {
-    nombre: (a, b) => a.producto.localeCompare(b.producto, "es"),
-    proteina_desc: (a, b) => b.proteina_g - a.proteina_g,
-    kcal_asc: (a, b) => a.kcal - b.kcal,
-    ratio: (a, b) => (b.kcal ? b.proteina_g / b.kcal : 0) - (a.kcal ? a.proteina_g / a.kcal : 0),
-    precio_asc: (a, b) => (a.precio_mxn || Infinity) - (b.precio_mxn || Infinity),
+/* ---------- Chipotle ---------- */
+const CHIP_FORMATOS = [
+  {name: "Burrito", sub: "Tortilla de harina", part: "Tortilla burrito"},
+  {name: "Bowl", sub: "Sin tortilla", part: null},
+  {name: "Tacos crujientes", sub: "3 tacos de maíz", part: "3 tacos crujientes"},
+  {name: "Tacos suaves", sub: "3 tacos de maíz", part: "3 tacos suaves de maíz"},
+  {name: "Ensalada", sub: "Cama de lechuga romana", part: "Lechuga (base de ensalada)"},
+];
+const CHIP_EXTRA_MENU = ["Complementos", "Menú niños"];
+const part = name => D.chipotle.find(p => p.componente === name);
+const group = g => D.chipotle.filter(p => p.grupo === g);
+const toppings = () => [...group("topping"), ...D.chipotle.filter(p => p.componente === "Lechuga (topping)")];
+const topLabel = p => p.componente === "Lechuga (topping)" ? "Lechuga romana" : p.componente;
+
+function chipotleLines() {
+  const c = S.chip;
+  const prot = c.proteina && part(c.proteina);
+  if (!prot) return [];
+  const lines = [];
+  const add = (p, name, price) => lines.push({name, price, kcal: p.kcal, p: p.proteina_g, c: p.carbs_g, g: p.grasa_g, qty: 1});
+  add(prot, prot.componente, prot.precio_mxn);
+  const f = CHIP_FORMATOS.find(x => x.name === c.formato);
+  if (f && f.part && part(f.part)) add(part(f.part), f.part, 0);
+  if (c.arroz && part(c.arroz)) add(part(c.arroz), c.arroz === "Arroz blanco" ? "Arroz con cilantro y limón" : c.arroz, 0);
+  if (c.frijoles && part(c.frijoles)) add(part(c.frijoles), c.frijoles, 0);
+  c.top.forEach(n => part(n) && add(part(n), topLabel(part(n)), 0));
+  c.ext.forEach(n => {
+    const p = part(n);
+    if (!p) return;
+    const incluido = n === "Guacamole" && c.proteina === "Vegetariano";
+    add(p, n + (incluido ? " (incluido)" : ""), incluido ? 0 : p.precio_mxn);
+  });
+  return lines;
+}
+
+function chipotleTitle() {
+  const c = S.chip;
+  if (!c.proteina) return "";
+  const prot = c.proteina === "Vegetariano" ? "vegetariano" : "de " + lowerFirst(c.proteina);
+  const resto = [];
+  if (c.arroz) resto.push(c.arroz === "Arroz blanco" ? "arroz blanco" : lowerFirst(c.arroz));
+  if (c.frijoles) resto.push(lowerFirst(c.frijoles));
+  c.top.forEach(n => resto.push(n === "Fajita de verduras" ? "fajita" : lowerFirst(topLabel(part(n) || {componente: n}))));
+  c.ext.forEach(n => resto.push(lowerFirst(n)));
+  return `${c.formato} ${prot}${resto.length ? " con " + resto.join(", ") : ""}`;
+}
+
+/* ---------- Resumen ---------- */
+function allLines() {
+  const lines = chipotleLines();
+  Object.entries(S.cart).forEach(([key, qty]) => {
+    const i = BY_KEY[key];
+    if (!i) return;
+    lines.push({key, name: i.producto, rest: i.restaurante, price: i.precio_mxn, kcal: i.kcal, p: i.proteina_g, c: i.carbs_g, g: i.grasa_g, qty});
+  });
+  return lines;
+}
+
+function orderTitle() {
+  const parts = [];
+  const ct = chipotleTitle();
+  if (ct) parts.push(ct);
+  Object.entries(S.cart).forEach(([key, qty]) => {
+    if (BY_KEY[key]) parts.push((qty > 1 ? qty + "× " : "") + BY_KEY[key].producto);
+  });
+  return parts.join(" + ");
+}
+
+function renderSum() {
+  const lines = allLines();
+  const t = {price: 0, kcal: 0, p: 0, c: 0, g: 0};
+  lines.forEach(l => { for (const k in t) t[k] += l[k] * l.qty; });
+  const title = orderTitle();
+  $("s-title").textContent = title || "Arma tu pedido";
+  $("s-price").textContent = money(t.price);
+  $("s-kcal").textContent = fmt(t.kcal);
+  $("s-prot").textContent = fmt(t.p) + " g";
+  $("s-desg").textContent = (S.desglose ? "▾" : "▸") + " DESGLOSE";
+  $("s-copy").disabled = !lines.length;
+  $("s-clear").hidden = !lines.length;
+
+  const body = $("s-body");
+  body.hidden = !S.desglose;
+  $("sum").classList.toggle("desg", S.desglose);
+  if (!S.desglose) {
+    // deja espacio abajo para que la tarjeta fija no tape el último paso
+    document.querySelector(".wrap").style.paddingBottom = $("sum").offsetHeight + 40 + "px";
+    return;
+  }
+  if (!lines.length) { body.innerHTML = '<p class="empty">Todavía no eliges nada.</p>'; return; }
+  const kp = t.p * 4, kc = t.c * 4, kg = t.g * 9, sum = kp + kc + kg || 1;
+  const pct = v => Math.round(v / sum * 100);
+  body.innerHTML = `
+    <div class="bar">
+      <div style="width:${kp / sum * 100}%;background:var(--p)"></div>
+      <div style="width:${kc / sum * 100}%;background:var(--c)"></div>
+      <div style="width:${kg / sum * 100}%;background:var(--g)"></div>
+    </div>
+    <div class="macros">
+      <div class="macro" style="border-color:var(--p)"><b>${fmt(t.p)} g</b><span>Proteína · ${pct(kp)}%</span></div>
+      <div class="macro" style="border-color:var(--c)"><b>${fmt(t.c)} g</b><span>Carbs · ${pct(kc)}%</span></div>
+      <div class="macro" style="border-color:var(--g)"><b>${fmt(t.g)} g</b><span>Grasa · ${pct(kg)}%</span></div>
+    </div>
+    ${lines.map(l => `
+      <div class="line">
+        <div class="nm">${esc(l.name)}${l.price ? `<span class="pr">${money(l.price * l.qty)}</span>` : ""}</div>
+        <div class="kc">${l.key ? `<span class="qty"><button data-dec="${esc(l.key)}" aria-label="Quitar uno">−</button>${l.qty}<button data-inc="${esc(l.key)}" aria-label="Agregar uno">+</button></span>` : ""}${fmt(l.kcal * l.qty)} kcal</div>
+      </div>`).join("")}
+    ${t.p > 0 ? `<p class="ratio">${t.price ? fmt1(t.p / (t.price / 10)) + " g de proteína por cada $10 · " : ""}${fmt(t.kcal / t.p)} kcal por gramo de proteína</p>` : ""}`;
+}
+
+/* ---------- Armar ---------- */
+function stepHead(n, title, id) {
+  return `<div class="step-h"${id ? ` id="${id}"` : ""}><span class="step-n">PASO ${n}</span><h2>${title}</h2></div>`;
+}
+
+function renderArmar() {
+  const restCount = r => D.items.filter(i => i.restaurante === r).length;
+  let h = `<section class="step">${stepHead(1, "Tipo de restaurante")}<div class="cards">` +
+    D.tipos.map(t => `<button class="card${S.tipo === t.tipo ? " on" : ""}" data-tipo="${esc(t.tipo)}"><b>${esc(t.tipo)}</b><span>${esc(t.restaurantes.join(", "))}</span></button>`).join("") +
+    `</div></section>`;
+
+  const tipo = D.tipos.find(t => t.tipo === S.tipo);
+  if (tipo) {
+    h += `<section class="step" id="paso-2">${stepHead(2, "Restaurante")}<div class="cards">` +
+      tipo.restaurantes.map(r => `<button class="card${S.rest === r ? " on" : ""}" data-rest="${esc(r)}"><b>${esc(r)}</b><div class="mono">${restCount(r)} platillos</div></button>`).join("") +
+      `</div></section>`;
+  }
+  if (tipo && tipo.restaurantes.includes(S.rest)) {
+    h += S.rest === "Chipotle" && D.chipotle.length ? chipotleSteps() : `<section class="step" id="paso-3">${stepHead(3, "Menú de " + esc(S.rest))}
+      <input class="search" id="m-q" type="search" placeholder="Buscar en ${esc(S.rest)}…" value="${esc(S.q)}">
+      <div id="m-cats"></div></section>`;
+  }
+  $("armar").innerHTML = h;
+  if ($("m-cats")) renderMenu();
+}
+
+function itemChip(i) {
+  const q = S.cart[i.key] || 0;
+  return `<button class="chip${q ? " on" : ""}" data-key="${esc(i.key)}">${esc(i.producto)}<span class="k">${fmt(i.kcal)} kcal</span>${i.precio_mxn ? `<span class="k">${money(i.precio_mxn)}</span>` : ""}${q > 1 ? `<span class="x">×${q}</span>` : ""}</button>`;
+}
+
+function renderMenu() {
+  const q = norm(S.q.trim());
+  const items = D.items.filter(i => i.restaurante === S.rest && (!q || norm(i.producto + " " + i.categoria).includes(q)));
+  const cats = [...new Set(items.map(i => i.categoria))];
+  if (!cats.length) { $("m-cats").innerHTML = '<p class="empty">No hay platillos con esa búsqueda.</p>'; return; }
+  $("m-cats").innerHTML = cats.map(cat => {
+    const list = items.filter(i => i.categoria === cat);
+    const sel = list.filter(i => S.cart[i.key]).length;
+    const open = q || S.open[S.rest + "|" + cat];
+    return `<div class="cat${open ? " open" : ""}">
+      <button class="cat-h" data-cat="${esc(cat)}"><span><span class="arrow">▸</span>${esc(cat)}</span><span class="meta">${sel ? `<em>${sel} elegido${sel > 1 ? "s" : ""}</em> · ` : ""}${list.length}</span></button>
+      ${open ? `<div class="cat-b chips">${list.map(itemChip).join("")}</div>` : ""}
+    </div>`;
+  }).join("");
+}
+
+function chipotleSteps() {
+  const c = S.chip;
+  const isVeg = c.proteina === "Vegetariano";
+  const chipBtn = (grp, name, label, extra = "", disabled = false) => {
+    const on = Array.isArray(c[grp]) ? c[grp].includes(name) : c[grp] === name;
+    return `<button class="chip${on ? " on" : ""}" data-cg="${grp}" data-cn="${esc(name)}"${disabled ? " disabled" : ""}>${esc(label)}${extra}</button>`;
   };
-  return list.sort(sorters[o]);
+  const kc = p => `<span class="k">${fmt(p.kcal)} kcal</span>`;
+  let h = `<section class="step" id="paso-3">${stepHead(3, "Formato")}<div class="cards">` +
+    CHIP_FORMATOS.map(f => `<button class="card${c.formato === f.name ? " on" : ""}" data-formato="${f.name}"><b>${f.name}</b><span>${f.sub}</span></button>`).join("") +
+    `</div></section>`;
+  h += `<section class="step">${stepHead(4, "Proteína")}<p class="note">El precio del platillo depende de la proteína.</p><div class="cards">` +
+    group("proteina").map(p => `<button class="card${c.proteina === p.componente ? " on" : ""}" data-prot="${esc(p.componente)}"><b>${esc(p.componente)}</b><div class="mono">${money(p.precio_mxn)} · ${fmt(p.kcal)} kcal · ${fmt(p.proteina_g)} g P</div></button>`).join("") +
+    `</div></section>`;
+  h += `<section class="step">${stepHead(5, "Arroz y frijoles")}
+    <div class="chips"><button class="chip${!c.arroz ? " on" : ""}" data-cg="arroz" data-cn="">Sin arroz</button>${group("arroz").map(p => chipBtn("arroz", p.componente, p.componente === "Arroz blanco" ? "Arroz con cilantro y limón" : p.componente, kc(p))).join("")}</div>
+    <div class="chips"><button class="chip${!c.frijoles ? " on" : ""}" data-cg="frijoles" data-cn="">Sin frijoles</button>${group("frijoles").map(p => chipBtn("frijoles", p.componente, p.componente, kc(p))).join("")}</div>
+  </section>`;
+  h += `<section class="step">${stepHead(6, "Verduras, salsas y lácteos")}<p class="note">Sin costo extra.</p><div class="chips">` +
+    toppings().map(p => chipBtn("top", p.componente, topLabel(p), kc(p), p.componente === "Vinagreta chipotle-miel" && c.formato !== "Ensalada")).join("") +
+    `</div></section>`;
+  h += `<section class="step">${stepHead(7, "Extras con costo")}<div class="chips">` +
+    group("extra").map(p => chipBtn("ext", p.componente, p.componente, `<span class="k">${p.componente === "Guacamole" && isVeg ? "incluido" : "+" + money(p.precio_mxn)} · ${fmt(p.kcal)} kcal</span>`)).join("") +
+    `</div></section>`;
+  const extras = D.items.filter(i => i.restaurante === "Chipotle" && CHIP_EXTRA_MENU.includes(i.categoria));
+  if (extras.length) {
+    h += `<section class="step">${stepHead(8, "Complementos")}<p class="note">Opcional: totopos, bebidas y más.</p><div class="chips">${extras.map(itemChip).join("")}</div></section>`;
+  }
+  return h;
 }
 
-function renderCategorias() {
-  const r = $("restaurante").value;
-  const cats = [...new Set(ITEMS.filter(i => !r || i.restaurante === r).map(i => i.categoria))].sort();
-  $("categoria").innerHTML = '<option value="">Todas las categorías</option>' +
-    cats.map(c => `<option>${esc(c)}</option>`).join("");
-}
-
-function renderLista() {
-  const list = filtered();
-  $("count").textContent = `${list.length} platillos`;
-  $("lista").innerHTML = list.map(i => `
-    <div class="item">
+/* ---------- Buscador ---------- */
+function renderBuscar() {
+  const q = norm($("b-q").value.trim());
+  const tipo = D.tipos.find(t => t.tipo === $("b-tipo").value);
+  const sorters = {
+    ratio: (a, b) => (b.kcal ? b.proteina_g / b.kcal : 0) - (a.kcal ? a.proteina_g / a.kcal : 0),
+    prot: (a, b) => b.proteina_g - a.proteina_g,
+    kcal: (a, b) => a.kcal - b.kcal,
+    precio: (a, b) => (a.precio_mxn || Infinity) - (b.precio_mxn || Infinity),
+    pxp: (a, b) => (b.precio_mxn ? b.proteina_g / b.precio_mxn : 0) - (a.precio_mxn ? a.proteina_g / a.precio_mxn : 0),
+  };
+  const list = D.items
+    .filter(i => (!tipo || tipo.restaurantes.includes(i.restaurante)) && (!q || norm(`${i.producto} ${i.categoria} ${i.restaurante}`).includes(q)))
+    .sort(sorters[$("b-orden").value]);
+  const shown = list.slice(0, 150);
+  $("b-count").textContent = list.length > shown.length ? `Mostrando ${shown.length} de ${list.length} platillos` : `${list.length} platillos`;
+  $("b-list").innerHTML = shown.map(i => {
+    const on = S.cart[i.key];
+    return `<div class="row">
       <div class="info">
         <div class="name">${esc(i.producto)}</div>
-        <div class="meta">${esc(i.restaurante)} · ${esc(i.categoria)}${i.porcion ? " · " + esc(i.porcion) : ""}${i.precio_mxn ? " · $" + fmt1(i.precio_mxn) : ""}</div>
-        <div class="macros">
-          <span class="kcal">${fmt(i.kcal)} kcal</span>
-          <span class="p">P ${fmt1(i.proteina_g)} g</span>
-          <span class="c">C ${fmt1(i.carbs_g)} g</span>
-          <span class="g">G ${fmt1(i.grasa_g)} g</span>
-        </div>
+        <div class="meta">${esc(i.restaurante)} · ${esc(i.categoria)}${i.precio_mxn ? " · " + money(i.precio_mxn) : ""}</div>
+        <div class="mac"><b>${fmt(i.kcal)} kcal</b> · P ${fmt1(i.proteina_g)} g · C ${fmt1(i.carbs_g)} g · G ${fmt1(i.grasa_g)} g</div>
       </div>
-      <button class="add" data-id="${i.id}" aria-label="Agregar">+</button>
-    </div>`).join("");
+      <button class="add${on ? " on" : ""}" data-key="${esc(i.key)}" aria-label="${on ? "Quitar" : "Agregar"}">${on ? "✓" : "+"}</button>
+    </div>`;
+  }).join("");
 }
 
-function renderCarrito() {
-  const entries = Object.entries(cart).filter(([id]) => ITEMS[id]);
-  const t = {kcal: 0, proteina_g: 0, carbs_g: 0, grasa_g: 0, sodio_mg: 0, precio_mxn: 0};
-  entries.forEach(([id, n]) => { for (const k in t) t[k] += ITEMS[id][k] * n; });
-  $("t-kcal").textContent = fmt(t.kcal);
-  $("t-precio").textContent = "$" + fmt(t.precio_mxn);
-  $("t-p").textContent = fmt1(t.proteina_g) + " g";
-  $("t-c").textContent = fmt1(t.carbs_g) + " g";
-  $("t-g").textContent = fmt1(t.grasa_g) + " g";
-  $("t-s").textContent = fmt(t.sodio_mg) + " mg";
-  const kp = t.proteina_g * 4, kc = t.carbs_g * 4, kg = t.grasa_g * 9, sum = kp + kc + kg;
-  $("bar").innerHTML = sum ? `<div style="width:${kp / sum * 100}%;background:var(--p)"></div><div style="width:${kc / sum * 100}%;background:var(--c)"></div><div style="width:${kg / sum * 100}%;background:var(--g)"></div>` : "";
-  $("carrito").innerHTML = entries.length ? entries.map(([id, n]) => {
-    const i = ITEMS[id];
-    return `<div class="cart-item">
-      <div class="info"><div>${esc(i.producto)}</div><div class="meta">${esc(i.restaurante)} · ${fmt(i.kcal * n)} kcal · P ${fmt1(i.proteina_g * n)} g</div></div>
-      <div class="qty"><button data-dec="${id}">−</button>${n}<button data-inc="${id}">+</button></div>
-    </div>`;
-  }).join("") : '<p class="empty">Todavía no agregas nada.</p>';
+/* ---------- Eventos ---------- */
+function refresh() {
+  save();
+  if (S.tab === "armar") renderArmar(); else renderBuscar();
+  renderSum();
+}
+function scrollTo(id) {
+  requestAnimationFrame(() => { const el = $(id); if (el) el.scrollIntoView({block: "start"}); });
 }
 
 document.addEventListener("click", e => {
-  const t = e.target;
-  if (t.dataset.id !== undefined) { cart[t.dataset.id] = (cart[t.dataset.id] || 0) + 1; }
-  else if (t.dataset.inc !== undefined) { cart[t.dataset.inc]++; }
-  else if (t.dataset.dec !== undefined) { if (--cart[t.dataset.dec] <= 0) delete cart[t.dataset.dec]; }
-  else if (t.id === "limpiar") { cart = {}; }
-  else if (t.id === "toggle") { $("panel").classList.toggle("open"); t.textContent = $("panel").classList.contains("open") ? "ocultar" : "ver"; return; }
-  else return;
-  save(); renderCarrito();
+  const b = e.target.closest("button");
+  if (!b || b.disabled) return;
+  const d = b.dataset;
+  if (d.tab) {
+    S.tab = d.tab;
+    document.querySelectorAll(".tab").forEach(t => t.classList.toggle("on", t.dataset.tab === S.tab));
+    $("armar").hidden = S.tab !== "armar";
+    $("buscar").hidden = S.tab !== "buscar";
+    refresh();
+  } else if (d.tipo !== undefined) {
+    if (S.tipo !== d.tipo) { S.tipo = d.tipo; S.rest = null; S.q = ""; }
+    refresh(); scrollTo("paso-2");
+  } else if (d.rest !== undefined) {
+    if (S.rest !== d.rest) { S.rest = d.rest; S.q = ""; }
+    refresh(); scrollTo("paso-3");
+  } else if (d.cat !== undefined) {
+    const k = S.rest + "|" + d.cat;
+    S.open[k] = !S.open[k];
+    renderMenu();
+  } else if (d.key !== undefined) {
+    if (S.cart[d.key]) delete S.cart[d.key]; else S.cart[d.key] = 1;
+    save();
+    if (S.tab === "buscar") renderBuscar(); else if ($("m-cats") && b.closest("#m-cats")) renderMenu(); else renderArmar();
+    renderSum();
+  } else if (d.inc !== undefined) {
+    S.cart[d.inc]++; refresh();
+  } else if (d.dec !== undefined) {
+    if (--S.cart[d.dec] <= 0) delete S.cart[d.dec];
+    refresh();
+  } else if (d.formato) {
+    S.chip.formato = d.formato;
+    if (d.formato !== "Ensalada") S.chip.top = S.chip.top.filter(n => n !== "Vinagreta chipotle-miel");
+    refresh();
+  } else if (d.prot) {
+    S.chip.proteina = S.chip.proteina === d.prot ? null : d.prot;
+    refresh();
+  } else if (d.cg) {
+    const c = S.chip, n = d.cn;
+    if (Array.isArray(c[d.cg])) c[d.cg] = c[d.cg].includes(n) ? c[d.cg].filter(x => x !== n) : [...c[d.cg], n];
+    else c[d.cg] = n || null;
+    refresh();
+  } else if (b.id === "s-desg") {
+    S.desglose = !S.desglose; renderSum();
+  } else if (b.id === "s-clear") {
+    S.cart = {};
+    S.chip = {formato: "Bowl", proteina: null, arroz: null, frijoles: null, top: [], ext: []};
+    refresh();
+  } else if (b.id === "s-copy") {
+    copyOrder(b);
+  }
 });
-$("restaurante").addEventListener("change", () => { renderCategorias(); renderLista(); });
-["categoria", "orden"].forEach(id => $(id).addEventListener("change", renderLista));
-$("buscar").addEventListener("input", renderLista);
 
-fetch("api/items").then(r => r.json()).then(data => {
-  ITEMS = data;
-  renderCategorias(); renderLista(); renderCarrito();
+document.addEventListener("input", e => {
+  if (e.target.id === "m-q") { S.q = e.target.value; renderMenu(); }
+  if (e.target.id === "b-q") renderBuscar();
+});
+["b-tipo", "b-orden"].forEach(id => $(id).addEventListener("change", renderBuscar));
+
+function copyOrder(btn) {
+  const lines = allLines();
+  const t = {price: 0, kcal: 0, p: 0, c: 0, g: 0};
+  lines.forEach(l => { for (const k in t) t[k] += l[k] * l.qty; });
+  const text = [
+    orderTitle(),
+    ...lines.map(l => `- ${l.qty > 1 ? l.qty + "× " : ""}${l.name}${l.rest ? " (" + l.rest + ")" : ""}${l.price ? " " + money(l.price * l.qty) : ""}`),
+    `Total: ${money(t.price)} · ${fmt(t.kcal)} kcal · P ${fmt(t.p)} g · C ${fmt(t.c)} g · G ${fmt(t.g)} g`,
+  ].join("\n");
+  const done = () => { btn.textContent = "¡Copiado!"; setTimeout(() => btn.textContent = "Copiar pedido", 1500); };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(done);
+  } else {
+    const ta = document.createElement("textarea");
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); ta.remove(); done();
+  }
+}
+
+fetch("api/data").then(r => r.json()).then(data => {
+  D = data;
+  D.items.forEach(i => BY_KEY[i.key] = i);
+  if (S.tipo && !D.tipos.some(t => t.tipo === S.tipo)) { S.tipo = null; S.rest = null; }
+  const restaurantes = D.tipos.reduce((n, t) => n + t.restaurantes.length, 0);
+  $("facts").innerHTML = `<span><em>${fmt(D.items.length)}</em> platillos</span><span><em>${restaurantes}</em> restaurantes</span><span>Macros y precios en MXN</span>`;
+  $("b-tipo").innerHTML = '<option value="">Todos los tipos</option>' + D.tipos.map(t => `<option>${esc(t.tipo)}</option>`).join("");
+  refresh();
 });
 </script>
 </body>
