@@ -1,0 +1,5 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+Taco Palenque,Tacos,Beef Fajita Taco,1 taco,310,24,19,15,2,2,620,estimado,55,estimado
+Taco Palenque,Tacos,Pirata,1 taco,680,35,47,39,3,3,1500,estimado,95,estimado
+Taco Palenque,Bowls,Palenque Bowl (Beef),1 bowl,630,35,61,27,5,7,1300,estimado,140,estimado
+Taco Palenque,Burritos,Sirloin Burrito,1 burrito,990,48,104,42,4,8,2100,estimado,150,estimado

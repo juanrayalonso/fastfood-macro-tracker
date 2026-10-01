@@ -1,0 +1,39 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio,origen_macros
+Chipotle,Proteínas,Pollo,1 porción,180,32,0,7,0,0,310,sodio de fuentes de terceros; azucar y fibra estimados,149,captura_usuario,B
+Chipotle,Proteínas,Steak,1 porción,150,21,1,6,0,0,315,sodio de fuentes de terceros; azucar y fibra estimados,189,captura_usuario,B
+Chipotle,Proteínas,Barbacoa,1 porción,170,24,2,7,1,0,530,sodio de fuentes de terceros; azucar y fibra estimados,189,captura_usuario,B
+Chipotle,Proteínas,Carnitas,1 porción,210,23,0,12,0,0,450,sodio de fuentes de terceros; azucar y fibra estimados,169,captura_usuario,B
+Chipotle,Proteínas,Sofritas,1 porción,150,8,9,10,4,3,560,sodio de fuentes de terceros; azucar y fibra estimados,149,captura_usuario,B
+Chipotle,Proteínas,Vegetariano (guacamole incluido),1 porción,0,0,0,0,0,0,0,estimado,149,captura_usuario,M (0 kcal; el guacamole incluido se suma aparte)
+Chipotle,Formatos,Tortilla burrito,1 tortilla,320,8,50,9,1,3,635,sodio de fuentes de terceros; azucar y fibra estimados,,,B (fuentes dan 8-9 P y 49-50 C)
+Chipotle,Formatos,3 tacos crujientes,3 tacos,180,3,21,9,0,2,200,estimado,,,B
+Chipotle,Formatos,3 tacos suaves de maíz,3 tacos,170,4,35,2,0,4,40,estimado,,,M (estimado)
+Chipotle,Formatos,Lechuga (base de ensalada),1 porción,15,1,3,0,1,1,5,estimado,,,B
+Chipotle,Formatos,Lechuga (topping),1 porción,5,0,1,0,0,0,2,estimado,,,M
+Chipotle,Arroz y frijoles,Arroz blanco,1 porción,210,4,40,4,0,1,350,estimado,,,B
+Chipotle,Arroz y frijoles,Arroz integral,1 porción,210,4,36,6,0,2,330,estimado,,,B menos grasa (M; una fuente decia 2 g)
+Chipotle,Arroz y frijoles,Frijoles pintos,1 porción,130,8,21,1.5,1,8,210,estimado,,,B menos grasa (M; fuente decia 1 g)
+Chipotle,Arroz y frijoles,Frijoles negros,1 porción,130,8,22,1.5,1,8,260,estimado,,,B menos grasa (M; fuente decia 1 g)
+Chipotle,Toppings,Fajita de verduras,1 porción,20,1,5,0,3,1,15,estimado,,,B
+Chipotle,Toppings,Pico de gallo,1 porción,25,0,4,0,2,1,260,estimado,,,B (kcal); carbs M
+Chipotle,Toppings,Salsa verde,1 porción,20,0,4,0,2,1,500,estimado,,,M
+Chipotle,Toppings,Salsa roja,1 porción,30,0,4,0,2,1,500,estimado,,,M
+Chipotle,Toppings,Chile y elote,1 porción,80,3,16,2,4,3,330,estimado,,,B (kcal y P); resto M
+Chipotle,Toppings,Crema,1 porción,110,2,2,9,1,0,30,estimado,,,B
+Chipotle,Toppings,Queso Monterey Jack,1 porción,110,6,1,9,0,0,180,estimado,,,B
+Chipotle,Toppings,Vinagreta chipotle-miel,1 porción,220,0,21,16,20,0,700,sodio de fuentes de terceros; azucar y fibra estimados,,,B
+Chipotle,Toppings,Guacamole,al platillo,230,2,8,22,1,6,370,estimado,49,captura_usuario,B (precio = extra al platillo)
+Chipotle,Toppings,Queso blanco,al platillo,120,5,4,9,2,0,260,estimado,29,captura_usuario,B (kcal y P); resto M (precio = extra al platillo)
+Chipotle,Menú niños,Menú niños (tacos o quesadilla),1 menú,,,,,,,,estimado,119,captura_usuario,sin macros en la fuente
+Chipotle,Complementos,Totopos (chips),Regular,540,7,73,25,1,7,420,estimado,39,captura_usuario,B (kcal); macros M
+Chipotle,Complementos,Totopos (chips),Grande (x1.5 estimado),810,10.5,109.5,37.5,1.5,10.5,630,estimado,49,captura_usuario,B (kcal); macros M; grande = x1.5 (M)
+Chipotle,Complementos,Chips & queso,Regular,780,17,81,43,3,7,680,estimado,69,captura_usuario,M (suma)
+Chipotle,Complementos,Chips & queso,Grande (x1.5 estimado),1170,25.5,121.5,64.5,4.5,10.5,1020,estimado,109,captura_usuario,M (suma); grande = x1.5 (M)
+Chipotle,Complementos,Chips & guacamole,Regular,770,9,81,47,2,13,790,estimado,69,captura_usuario,B (770 kcal); macros M
+Chipotle,Complementos,Chips & guacamole,Grande (x1.5 estimado),1155,13.5,121.5,70.5,3,19.5,1185,estimado,109,captura_usuario,B (770 kcal); macros M; grande = x1.5 (M)
+Chipotle,Complementos,Chips & salsa,Regular,565,7,77,25,3,8,600,estimado,49,captura_usuario,M (suma)
+Chipotle,Complementos,Chips & salsa,Grande (x1.5 estimado),847.5,10.5,115.5,37.5,4.5,12,900,estimado,77,captura_usuario,M (suma); grande = x1.5 (M)
+Chipotle,Complementos,Queso blanco solo,Regular,240,10,8,18,4,0,520,estimado,49,captura_usuario,M (2x la porción de 2 oz)
+Chipotle,Complementos,Queso blanco solo,Grande (x1.5 estimado),360,15,12,27,6,0,780,estimado,79,captura_usuario,M (2x la porción de 2 oz); grande = x1.5 (M)
+Chipotle,Complementos,Guacamole solo,Regular,230,2,8,22,1,6,370,estimado,49,captura_usuario,B
+Chipotle,Complementos,Guacamole solo,Grande (x1.5 estimado),345,3,12,33,1.5,9,555,estimado,79,captura_usuario,B; grande = x1.5 (M)

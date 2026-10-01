@@ -1,0 +1,20 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+Domino's Pizza,Pizzas,Pizza de Pepperoni,1 rebanada (127g),366,15.4,41,15.6,4,2,780,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Pizza Mexicana,1 rebanada (130g),310,12,47,11,5,2,680,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Pizza de Sartén Pepperoni,1 rebanada,380,13,43,20,4,2,800,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Pizza de Jamón,1 rebanada (127g),275,12,34,9.5,4,2,620,estimado,23.63,estimado
+Domino's Pizza,Pizzas,Pizza de Queso,1 rebanada (128g),290,12,35,11,4,2,580,estimado,23.63,estimado
+Domino's Pizza,Pizzas,Pizza de Sartén Hawaiana,1 rebanada,380,13,49,18,7,2,780,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Pizza Chicken Hawaiana,1 rebanada,300,12,48,10,7,2,680,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Honolulu,1 rebanada,200,5,28,10,5,1,400,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Pizza Extravaganzza,1 rebanada,290,13,28,14,3,2,640,estimado,33.63,estimado
+Domino's Pizza,Pizzas,Pizza Honolulu (Grande),1 rebanada (168g),344,15.75,38.87,14,6,2,740,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Pizza de Sartén Honolulu (Grande),1 rebanada,370,12,47,18,6,2,780,estimado,27.38,estimado
+Domino's Pizza,Pizzas,Crunchy,1 pizza (549g),1440,24,216,64,12,8,1800,estimado,149,estimado
+Domino's Pizza,Pizzas,Pizza Crunchy Grande Hawaiana con Champiñones y Jalapeño,1 porción (1072g),1815,79,188,75.5,24,10,3600,estimado,219,estimado
+Domino's Pizza,Complementos,Papotas,1 porción (41g),60,2,13,2,1,1,150,estimado,79,menu_mx
+Domino's Pizza,Complementos,Cheesy Bread,1 stick (38g),120,4,11,6,1,1,210,estimado,45,estimado
+Domino's Pizza,Complementos,Cup Ranch,100g,363,3,9,35,4,0,900,estimado,15,estimado
+Domino's Pizza,Postres,Canela Baitz,4 piezas (60g),190,3,26,8,12,1,170,estimado,79,menu_mx
+Domino's Pizza,Postres,Canelazo Bites,4 piezas,190,3,26,8,12,1,170,estimado,79,estimado
+Domino's Pizza,Postres,Chocolate Lava Crunch Cake,100g,350,4,47,17,30,2,330,estimado,99,menu_mx

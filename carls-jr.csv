@@ -1,0 +1,36 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+Carl's Jr.,Hamburguesas,Famous Star with Cheese,284 g,670,28,57,37,10,3,1210,estimado,99,menu_mx
+Carl's Jr.,Hamburguesas,Super Star with Cheese,390 g,920,48,59,56,11,3,1610,estimado,138,menu_mx
+Carl's Jr.,Hamburguesas,The Big Carl,321 g,920,47,56,58,10,3,1400,estimado,115,menu_mx
+Carl's Jr.,Hamburguesas,Western Bacon Cheeseburger,254 g,780,38,77,36,22,3,1400,estimado,114,menu_mx
+Carl's Jr.,Hamburguesas,Double Western Bacon Cheeseburger,322 g,1010,55,76,55,22,3,1900,estimado,146,menu_mx
+Carl's Jr.,Hamburguesas,The Original Big Angus Burger,338 g,780,47,56,48,11,3,1500,estimado,163,menu_mx
+Carl's Jr.,Hamburguesas,Western Bacon Big Angus Burger,289 g,870,33,74,48,20,3,1700,estimado,175,estimado
+Carl's Jr.,Hamburguesas,Guacamole Bacon Big Angus Burger,369 g,950,39,50,67,9,5,1500,estimado,180,estimado
+Carl's Jr.,Hamburguesas,Low Carb Big Angus Burger,252 g,420,25,9,33,4,2,1000,estimado,152,menu_mx
+Carl's Jr.,Hamburguesas,Teriyaki Burger,316 g,630,28,65,29,20,3,1400,estimado,126,menu_mx
+Carl's Jr.,Hamburguesas,Jalapeño Burger,286 g,620,30,43,39,9,3,1250,estimado,115,menu_mx
+Carl's Jr.,Hamburguesas,The Breakfast Burger,256 g,730,37,47,43,10,3,1350,estimado,99,menu_mx
+Carl's Jr.,Hamburguesas,Veggie Star,128 g,166,9,28,2,8,4,330,estimado,113,menu_mx
+Carl's Jr.,Pollo,Charbroiled Santa Fe Chicken,256 g,560,33,46,27,8,3,1300,estimado,138,menu_mx
+Carl's Jr.,Pollo,Charbroiled Chicken Club,264 g,580,36,46,28,9,3,1450,estimado,135,estimado
+Carl's Jr.,Pollo,Charbroiled BBQ Chicken,239 g,390,30,50,7,17,3,1100,estimado,124,menu_mx
+Carl's Jr.,Pollo,Bacon Swiss Big Chicken Fillet,322 g,770,42,58,41,9,3,1500,estimado,150,estimado
+Carl's Jr.,Pollo,Big Chicken Fillet,288 g,650,33,55,33,8,3,1200,estimado,141,estimado
+Carl's Jr.,Pollo,Chicken Stars,91 g,260,12,18,16,1,1,520,estimado,70,estimado
+Carl's Jr.,Pollo,Chicken Tenders (5 pzas),213 g,440,41,21,21,1,1,1100,estimado,90,estimado
+Carl's Jr.,Desayuno,Breakfast Sandwich,202 g,500,34,43,26,6,2,1000,estimado,70,estimado
+Carl's Jr.,Desayuno,Bacon & Egg Burrito,207 g,570,29,32,35,2,2,930,estimado,75,estimado
+Carl's Jr.,Desayuno,Loaded Breakfast Burrito,301 g,760,33,46,48,3,3,1500,estimado,105,estimado
+Carl's Jr.,Desayuno,Hash Brown,108 g,350,3,32,23,0,3,490,estimado,35,estimado
+Carl's Jr.,Guarniciones,Papas Fritas Chicas,104 g,300,3,39,15,0,4,400,estimado,56,menu_mx
+Carl's Jr.,Guarniciones,Crisscut Fries,139 g,450,5,42,39,1,4,750,estimado,65,menu_mx
+Carl's Jr.,Guarniciones,Chili Cheese Fries,317 g,810,20,79,46,4,7,1530,estimado,99,menu_mx
+Carl's Jr.,Guarniciones,Onion Rings,128 g,530,8,61,28,6,3,740,estimado,68,menu_mx
+Carl's Jr.,Ensaladas,Side Salad,193 g,140,6,15,7,5,3,160,estimado,45,estimado
+Carl's Jr.,Ensaladas,Original Grilled Chicken Salad,293 g,280,32,19,9,8,4,900,estimado,154,menu_mx
+Carl's Jr.,Postres y malteadas,Malteada Oreo,397 ml,710,13,79,39,66,2,520,estimado,85,estimado
+Carl's Jr.,Postres y malteadas,Malteada Chocolate,397 ml,690,12,84,36,70,2,450,estimado,85,estimado
+Carl's Jr.,Postres y malteadas,Malteada Vainilla,397 ml,700,12,86,35,74,0,410,estimado,85,estimado
+Carl's Jr.,Postres y malteadas,Malteada Fresa,397 ml,690,12,83,35,70,0,400,estimado,85,estimado
+Carl's Jr.,Postres y malteadas,Chocolate Chip Cookie (2 galletas),71 g,370,3,48,19,28,2,330,estimado,28,menu_mx

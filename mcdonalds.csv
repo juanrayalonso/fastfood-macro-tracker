@@ -1,0 +1,231 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+McDonald's,Hamburguesas,Bacon Quarter Pounder with Cheese,1 porcion,630,36,43,35,10,3,1470,real,89,estimado
+McDonald's,Hamburguesas,Big Mac,1 porcion,580,25,45,34,7,3,1060,real,69.1,menu_mx
+McDonald's,Hamburguesas,Cheeseburger,1 porcion,300,15,31,13,6,2,720,real,31.61,menu_mx
+McDonald's,Hamburguesas,Daily Double,1 porcion,490,22,30,31,5,2,810,real,59,estimado
+McDonald's,Hamburguesas,Double Cheeseburger,1 porcion,440,25,34,24,6,2,1120,real,55,estimado
+McDonald's,Hamburguesas,Double Quarter Pounder with Cheese,1 porcion,740,48,43,42,10,2,1360,real,121.6,menu_mx
+McDonald's,Hamburguesas,Hamburger,1 porcion,250,12,30,9,5,1,510,real,27.3,menu_mx
+McDonald's,Hamburguesas,McDouble,1 porcion,390,22,32,20,6,2,920,real,45,estimado
+McDonald's,Hamburguesas,Quarter Pounder with Cheese,1 porcion,520,30,42,26,10,2,1140,real,73.84,menu_mx
+McDonald's,Hamburguesas,Quarter Pounder with Cheese Deluxe,1 porcion,630,30,44,37,11,3,1210,real,85,estimado
+McDonald's,Pollo y pescado,Deluxe McCrispy,1 porcion,530,27,48,26,10,2,1050,real,85,estimado
+McDonald's,Pollo y pescado,Filet-O-Fish,1 porcion,380,16,38,19,4,1,580,real,69,estimado
+McDonald's,Pollo y pescado,McChicken,1 porcion,390,14,38,21,4,1,560,real,49,estimado
+McDonald's,Pollo y pescado,McCrispy,1 porcion,470,26,46,20,9,1,1140,real,79,estimado
+McDonald's,Pollo y pescado,Spicy Deluxe McCrispy,1 porcion,530,27,49,26,10,2,1200,real,89,estimado
+McDonald's,Pollo y pescado,Spicy McCrispy,1 porcion,530,27,48,26,9,2,1320,real,82,estimado
+McDonald's,Snack Wrap,Snack Wrap McCrispy Ranch,1 porcion,400,17,32,23,3,1,970,real,45,estimado
+McDonald's,Snack Wrap,Snack Wrap McCrispy Spicy,1 porcion,390,17,32,22,2,2,1000,real,45,estimado
+McDonald's,McValue,Chicken McNuggets (10 piece),10 piece,410,23,26,24,0,1,850,real,78.24,menu_mx
+McDonald's,McValue,Chicken McNuggets (20 piece),20 piece,830,46,51,49,0,2,1700,real,139.35,menu_mx
+McDonald's,McValue,Chicken McNuggets (4 piece),4 piece,170,9,10,10,0,0,340,real,32.28,menu_mx
+McDonald's,McValue,Chicken McNuggets (40 piece),40 piece,1650,92,102,98,1,4,3400,real,260,estimado
+McDonald's,McValue,Chicken McNuggets (6 piece),6 piece,250,14,15,15,0,0,500,real,63.0,menu_mx
+McDonald's,McValue,Coffee (Medium),Medium,10,1,1,0,0,0,10,real,42,estimado
+McDonald's,Desayuno,Bacon Egg and Cheese Bagel,1 porcion,590,25,56,30,7,2,1320,real,65,estimado
+McDonald's,Desayuno,Bacon Egg and Cheese Biscuit,1 porcion,460,17,39,26,3,2,1330,real,55,estimado
+McDonald's,Desayuno,Bacon Egg and Cheese McGriddles,1 porcion,430,17,44,21,15,2,1230,real,59,estimado
+McDonald's,Desayuno,Bagel Plain,1 porcion,270,9,51,3.5,5,2,550,real,29,estimado
+McDonald's,Desayuno,Big Breakfast,1 porcion,1060,26,131,48,56,3,1540,real,99,estimado
+McDonald's,Desayuno,Big Breakfast with Hotcakes,1 porcion,1340,36,158,63,48,5,2070,real,119,estimado
+McDonald's,Desayuno,Egg and Cheese Bagel,1 porcion,520,21,55,24,6,2,1100,real,59,estimado
+McDonald's,Desayuno,Egg and Cheese Biscuit,1 porcion,390,13,39,21,3,1,1110,real,45,estimado
+McDonald's,Desayuno,Egg McMuffin,1 porcion,310,17,30,13,3,2,770,real,39.79,menu_mx
+McDonald's,Desayuno,Fruit and Maple Oatmeal,1 porcion,320,6,64,4.5,31,4,150,real,45,estimado
+McDonald's,Desayuno,Hash Browns,1 porcion,140,2,18,8,0,2,310,real,28.38,menu_mx
+McDonald's,Desayuno,Hotcakes,1 porcion,580,9,101,15,45,2,530,real,41.49,menu_mx
+McDonald's,Desayuno,Hotcakes and Sausage,1 porcion,770,15,102,33,46,2,810,real,54.82,menu_mx
+McDonald's,Desayuno,Sausage Biscuit,1 porcion,460,11,37,30,2,2,1090,real,45,estimado
+McDonald's,Desayuno,Sausage Biscuit with Egg,1 porcion,530,17,38,35,3,2,1190,real,50,estimado
+McDonald's,Desayuno,Sausage Burrito,1 porcion,310,13,25,17,2,1,800,real,39,estimado
+McDonald's,Desayuno,Sausage Egg and Cheese Bagel,1 porcion,710,27,56,42,6,2,1380,real,69,estimado
+McDonald's,Desayuno,Sausage Egg and Cheese McGriddles,1 porcion,550,19,44,33,15,2,1290,real,59,estimado
+McDonald's,Desayuno,Sausage McGriddles,1 porcion,430,11,41,24,14,2,990,real,49,estimado
+McDonald's,Desayuno,Sausage McMuffin,1 porcion,400,14,29,26,2,2,760,real,49,estimado
+McDonald's,Desayuno,Sausage McMuffin with Egg,1 porcion,480,20,30,31,2,2,830,real,59.28,menu_mx
+McDonald's,Desayuno,Steak Egg and Cheese Bagel,1 porcion,680,34,57,35,7,3,1510,real,79,estimado
+McDonald's,Papas y acompañantes,Apple Slices,1 porcion,15,0,4,0,3,0,0,real,25,estimado
+McDonald's,Papas y acompañantes,Kids Fries (Kids),Kids,110,2,14,5,0,1,90,real,22,estimado
+McDonald's,Papas y acompañantes,Large French Fries (Large),Large,480,7,65,23,0,6,400,real,40.99,menu_mx
+McDonald's,Papas y acompañantes,Medium French Fries (Medium),Medium,320,5,43,15,0,4,260,real,35.49,menu_mx
+McDonald's,Papas y acompañantes,Small French Fries (Small),Small,230,3,31,11,0,3,190,real,25.65,menu_mx
+McDonald's,Salsas y condimentos,Creamy Ranch Sauce,1 porcion,110,0,1,12,1,0,160,real,8,estimado
+McDonald's,Salsas y condimentos,Honey,1 porcion,50,0,12,0,11,0,0,real,10,estimado
+McDonald's,Salsas y condimentos,Honey Mustard Sauce,1 porcion,60,0,6,3.5,4,1,125,real,8,estimado
+McDonald's,Salsas y condimentos,Ketchup Packet,1 porcion,10,0,2,0,2,0,90,real,8,estimado
+McDonald's,Salsas y condimentos,Mayonnaise Packet,1 porcion,90,0,0,10,0,0,60,real,8,estimado
+McDonald's,Salsas y condimentos,McCrispy Signature Creamy Chili Sauce,1 porcion,110,0,3,11,2,0,250,real,8,estimado
+McDonald's,Salsas y condimentos,Mighty Hot Sauce,1 porcion,25,0,6,0,5,0,530,real,8,estimado
+McDonald's,Salsas y condimentos,Mustard Packet,1 porcion,0,0,0,0,0,0,70,real,8,estimado
+McDonald's,Salsas y condimentos,Spicy Buffalo Sauce,1 porcion,30,0,1,3,0,0,520,real,8,estimado
+McDonald's,Salsas y condimentos,Sweet 'N Sour Sauce,1 porcion,50,0,11,0,10,0,160,real,8,estimado
+McDonald's,Salsas y condimentos,Tangy Barbeque Sauce,1 porcion,45,0,11,0,9,0,260,real,8,estimado
+McDonald's,Postres y malteadas,Baked Hot Apple Pie,1 porcion,230,2,33,11,14,1,100,real,29.65,menu_mx
+McDonald's,Postres y malteadas,Chocolate Chip Cookie,1 porcion,170,2,22,8,15,1,95,real,25,estimado
+McDonald's,Postres y malteadas,Chocolate Shake (Large),Large,800,18,134,20,106,1,390,real,45,estimado
+McDonald's,Postres y malteadas,Chocolate Shake (Medium),Medium,650,15,107,17,85,1,310,real,39.05,menu_mx
+McDonald's,Postres y malteadas,Chocolate Shake (Small),Small,520,12,85,14,67,0,250,real,33,estimado
+McDonald's,Postres y malteadas,Hot Caramel Sundae,1 porcion,330,7,58,7,41,0,150,real,27,estimado
+McDonald's,Postres y malteadas,Hot Fudge Sundae,1 porcion,330,8,51,10,44,2,170,real,26.94,menu_mx
+McDonald's,Postres y malteadas,McFlurry with M&M'S Chocolate Candies (Mini),Mini,340,7,51,12,45,1,95,real,30,estimado
+McDonald's,Postres y malteadas,McFlurry with M&M'S Chocolate Candies (Regular),Regular,570,11,85,19,74,2,170,real,36.41,menu_mx
+McDonald's,Postres y malteadas,McFlurry with Oreo Cookies (Mini),Mini,240,5,38,8,28,0,125,real,30,estimado
+McDonald's,Postres y malteadas,McFlurry with Oreo Cookies (Regular),Regular,410,10,64,13,48,1,210,real,36.89,menu_mx
+McDonald's,Postres y malteadas,Strawberry Shake (Large),Large,850,19,143,21,107,0,310,real,45,estimado
+McDonald's,Postres y malteadas,Strawberry Shake (Medium),Medium,600,13,99,16,74,0,210,real,39.04,menu_mx
+McDonald's,Postres y malteadas,Strawberry Shake (Small),Small,470,10,77,13,58,0,160,real,33,estimado
+McDonald's,Postres y malteadas,Vanilla Cone,1 porcion,200,5,33,5,23,0,80,real,16,estimado
+McDonald's,Postres y malteadas,Vanilla Shake (Large),Large,780,17,133,19,85,0,360,real,45,estimado
+McDonald's,Postres y malteadas,Vanilla Shake (Medium),Medium,570,12,97,15,62,0,260,real,39.05,menu_mx
+McDonald's,Postres y malteadas,Vanilla Shake (Small),Small,480,10,80,13,51,0,210,real,33,estimado
+McDonald's,Bebidas,1% Low Fat Milk Jug,1 porcion,100,8,12,2,11,0,80,real,35,estimado
+McDonald's,Bebidas,Coca-Cola No Ice (Extra Small),Extra Small,150,0,40,0,40,0,40,real,25,estimado
+McDonald's,Bebidas,Coca-Cola No Ice (Large),Large,380,0,100,0,100,0,95,real,48,estimado
+McDonald's,Bebidas,Coca-Cola No Ice (Medium),Medium,270,0,70,0,70,0,65,real,42,estimado
+McDonald's,Bebidas,Coca-Cola No Ice (Small),Small,200,0,53,0,53,0,50,real,35,estimado
+McDonald's,Bebidas,Dasani Water,1 porcion,0,0,0,0,0,0,0,real,25,estimado
+McDonald's,Bebidas,Diet Coke (Extra Small),Extra Small,0,0,0,0,0,0,10,real,25,estimado
+McDonald's,Bebidas,Diet Coke (Large),Large,0,0,1,0,0,0,20,real,48,estimado
+McDonald's,Bebidas,Diet Coke (Medium),Medium,0,0,0,0,0,0,15,real,42,estimado
+McDonald's,Bebidas,Diet Coke (Small),Small,0,0,0,0,0,0,50,real,35,estimado
+McDonald's,Bebidas,Dr Pepper No Ice (Extra Small),Extra Small,140,0,39,0,38,0,45,real,25,estimado
+McDonald's,Bebidas,Dr Pepper No Ice (Large),Large,360,0,98,0,96,0,110,real,48,estimado
+McDonald's,Bebidas,Dr Pepper No Ice (Medium),Medium,250,0,68,0,67,0,75,real,42,estimado
+McDonald's,Bebidas,Dr Pepper No Ice (Small),Small,190,0,52,0,51,0,60,real,35,estimado
+McDonald's,Bebidas,Frozen Coca Cola Classic (Large),Large,110,0,29,0,29,0,45,real,48,estimado
+McDonald's,Bebidas,Frozen Coca Cola Classic (Medium),Medium,80,0,21,0,21,0,30,real,42,estimado
+McDonald's,Bebidas,Frozen Coca Cola Classic (Small),Small,60,0,16,0,16,0,25,real,35,estimado
+McDonald's,Bebidas,Frozen Fanta Blue Raspberry (Large),Large,110,0,29,0,29,0,50,real,48,estimado
+McDonald's,Bebidas,Frozen Fanta Blue Raspberry (Medium),Medium,80,0,20,0,20,0,35,real,42,estimado
+McDonald's,Bebidas,Frozen Fanta Blue Raspberry (Small),Small,60,0,16,0,16,0,30,real,35,estimado
+McDonald's,Bebidas,Frozen Hawaiian Punch (Large),Large,110,0,28,0,28,0,35,real,48,estimado
+McDonald's,Bebidas,Frozen Hawaiian Punch (Medium),Medium,70,0,20,0,20,0,25,real,42,estimado
+McDonald's,Bebidas,Frozen Hawaiian Punch (Small),Small,60,0,15,0,15,0,20,real,35,estimado
+McDonald's,Bebidas,Hi-C Orange No Ice (Extra Small),Extra Small,160,0,42,0,42,0,40,real,25,estimado
+McDonald's,Bebidas,Hi-C Orange No Ice (Large),Large,410,0,104,0,104,0,100,real,48,estimado
+McDonald's,Bebidas,Hi-C Orange No Ice (Medium),Medium,280,0,73,0,73,0,70,real,42,estimado
+McDonald's,Bebidas,Hi-C Orange No Ice (Small),Small,220,0,56,0,56,0,55,real,35,estimado
+McDonald's,Bebidas,Honest Kids Appley Ever After (Box 6 fl oz Drink Box),1 porcion,35,0,8,0,8,0,15,real,30,estimado
+McDonald's,Bebidas,Mango Pineapple Smoothie (Large),Large,340,4,78,1,72,2,60,real,48,estimado
+McDonald's,Bebidas,Mango Pineapple Smoothie (Medium),Medium,250,3,57,1,52,1,45,real,42,estimado
+McDonald's,Bebidas,Mango Pineapple Smoothie (Small),Small,200,2,45,0.5,42,1,35,real,35,estimado
+McDonald's,Bebidas,McDonald's Lemonade (16 Oz.) (Small),Small,120,0,31,0,29,0,5,real,35,estimado
+McDonald's,Bebidas,McDonald's Lemonade (22 Oz.) (Medium),Medium,190,1,48,0,45,0,10,real,42,estimado
+McDonald's,Bebidas,McDonald's Lemonade (30 Oz.) (Large),Large,270,1,68,0,63,0,15,real,48,estimado
+McDonald's,Bebidas,Minute Maid Orange Juice (Large),Large,270,4,65,0,58,1,65,real,48,estimado
+McDonald's,Bebidas,Minute Maid Orange Juice (Medium),Medium,190,3,45,0,41,1,45,real,42,estimado
+McDonald's,Bebidas,Minute Maid Orange Juice (Small),Small,150,2,36,0,32,1,35,real,35,estimado
+McDonald's,Bebidas,Reduced Sugar Low Fat Chocolate Milk Jug,1 porcion,130,9,18,2.5,14,0,85,real,35,estimado
+McDonald's,Bebidas,Sprite No Ice (Extra Small),Extra Small,140,0,36,0,36,0,70,real,25,estimado
+McDonald's,Bebidas,Sprite No Ice (Large),Large,350,0,91,0,91,0,170,real,48,estimado
+McDonald's,Bebidas,Sprite No Ice (Medium),Medium,250,0,64,0,64,0,120,real,42,estimado
+McDonald's,Bebidas,Sprite No Ice (Small),Small,190,0,49,0,49,0,90,real,35,estimado
+McDonald's,Bebidas,Strawberry Banana Smoothie (Large),Large,330,4,76,1,68,0,70,real,48,estimado
+McDonald's,Bebidas,Strawberry Banana Smoothie (Medium),Medium,240,3,55,1,49,3,50,real,42,estimado
+McDonald's,Bebidas,Strawberry Banana Smoothie (Small),Small,190,2,44,0.5,39,2,40,real,35,estimado
+McDonald's,Bebidas,Sweet Tea (Extra Small),Extra Small,70,0,18,0,17,0,10,real,25,estimado
+McDonald's,Bebidas,Sweet Tea (Large),Large,170,1,43,0,40,0,25,real,48,estimado
+McDonald's,Bebidas,Sweet Tea (Medium),Medium,130,1,31,0,29,0,20,real,42,estimado
+McDonald's,Bebidas,Sweet Tea No Ice (Small),Small,170,1,42,0,40,0,15,real,35,estimado
+McDonald's,Bebidas,Unsweetened Iced Tea (Extra Small),Extra Small,0,1,0,0,0,0,10,real,25,estimado
+McDonald's,Bebidas,Unsweetened Iced Tea (Large),Large,0,1,0,0,0,0,20,real,48,estimado
+McDonald's,Bebidas,Unsweetened Iced Tea (Medium),Medium,0,1,0,0,0,0,15,real,42,estimado
+McDonald's,Bebidas,Unsweetened Iced Tea (Small),Small,0,1,0,0,0,0,10,real,35,estimado
+McDonald's,McCafé,Americano Coffee (Large),Large,5,0,1,0,0,0,15,real,49,estimado
+McDonald's,McCafé,Blackberry Passion Fruit Lemonade Refresher 16 Oz (Small),Small,170,1,40,0,35,1,40,real,55,estimado
+McDonald's,McCafé,Blackberry Passion Fruit Lemonade Refresher 22 Oz (Medium),Medium,230,1,54,0,48,1,60,real,65,estimado
+McDonald's,McCafé,Blackberry Passion Fruit Lemonade Refresher 30 Oz (Large),Large,270,1,66,0,59,1,75,real,75,estimado
+McDonald's,McCafé,Cappuccino (Large),Large,200,11,18,10,14,0,130,real,75,estimado
+McDonald's,McCafé,Cappuccino (Medium),Medium,160,9,14,7,11,0,100,real,65,estimado
+McDonald's,McCafé,Cappuccino (Small),Small,110,6,10,5,8,0,75,real,55,estimado
+McDonald's,McCafé,Caramel Cappuccino (Large),Large,340,11,55,8,49,0,460,real,75,estimado
+McDonald's,McCafé,Caramel Cappuccino (Medium),Medium,260,8,44,6,39,0,370,real,65,estimado
+McDonald's,McCafé,Caramel Cappuccino (Small),Small,210,7,35,4.5,31,0,290,real,55,estimado
+McDonald's,McCafé,Caramel Macchiato (Large),Large,400,14,62,10,53,0,490,real,75,estimado
+McDonald's,McCafé,Caramel Macchiato (Medium),Medium,320,11,51,8,44,0,400,real,65,estimado
+McDonald's,McCafé,Caramel Macchiato (Small),Small,260,9,41,6,35,0,320,real,55,estimado
+McDonald's,McCafé,Coffee (Large),Large,10,1,2,0,0,0,15,real,49,estimado
+McDonald's,McCafé,Coffee (Small),Small,5,0,1,0,0,0,10,real,35,estimado
+McDonald's,McCafé,Coffee Decaf (Large),Large,15,1,2,0,0,0,15,real,49,estimado
+McDonald's,McCafé,Coffee Decaf (Medium),Medium,10,1,2,0,0,0,10,real,42,estimado
+McDonald's,McCafé,Coffee Decaf (Small),Small,5,1,1,0,0,0,10,real,35,estimado
+McDonald's,McCafé,Dirty Dr. Pepper 16 Oz (Small),Small,250,0,51,6,47,0,45,real,55,estimado
+McDonald's,McCafé,Dirty Dr. Pepper 22 Oz (Medium),Medium,330,0,70,7,64,0,65,real,65,estimado
+McDonald's,McCafé,Dirty Dr. Pepper 30 Oz (Large),Large,430,0,92,9,86,0,85,real,75,estimado
+McDonald's,McCafé,Espresso Americano Coffee (Medium),Medium,5,0,1,0,0,0,10,real,42,estimado
+McDonald's,McCafé,Espresso Americano Coffee (Small),Small,0,0,1,0,0,0,10,real,35,estimado
+McDonald's,McCafé,Frappe Caramel (Large),Large,650,11,94,26,84,1,115,real,75,estimado
+McDonald's,McCafé,Frappe Caramel (Medium),Medium,490,8,70,20,62,1,90,real,65,estimado
+McDonald's,McCafé,Frappe Caramel (Small),Small,420,7,60,17,53,1,80,real,55,estimado
+McDonald's,McCafé,Frappe Mocha (Large),Large,660,11,97,26,81,1,190,real,75,estimado
+McDonald's,McCafé,Frappe Mocha (Medium),Medium,490,8,72,20,60,0,140,real,65,estimado
+McDonald's,McCafé,Frappe Mocha (Small),Small,430,7,61,17,51,0,120,real,55,estimado
+McDonald's,McCafé,French Vanilla Cappuccino (Large),Large,340,9,58,8,43,0,115,real,75,estimado
+McDonald's,McCafé,Hot Chocolate (Large),Large,540,18,75,18,66,1,270,real,75,estimado
+McDonald's,McCafé,Hot Chocolate (Medium),Medium,440,14,62,15,55,1,210,real,65,estimado
+McDonald's,McCafé,Hot Chocolate (Small),Small,360,11,51,12,45,1,170,real,55,estimado
+McDonald's,McCafé,Hot Tea (Large),Large,15,3,0,0,0,0,10,real,49,estimado
+McDonald's,McCafé,Hot Tea (Medium),Medium,10,3,0,0,0,0,5,real,42,estimado
+McDonald's,McCafé,Hot Tea (Small),Small,10,2,0,0,0,0,5,real,35,estimado
+McDonald's,McCafé,Iced Bold Blend Coffee Black (Small),Small,5,1,1,0,0,0,10,real,35,estimado
+McDonald's,McCafé,Iced Caramel Coffee (Large),Large,280,5,46,8,38,0,410,real,49,estimado
+McDonald's,McCafé,Iced Caramel Coffee (Medium),Medium,200,3,31,6,26,0,280,real,42,estimado
+McDonald's,McCafé,Iced Caramel Coffee (Small),Small,150,2,23,5,19,0,210,real,35,estimado
+McDonald's,McCafé,Iced Caramel Latte (Medium),Medium,220,7,36,5,32,0,300,real,65,estimado
+McDonald's,McCafé,Iced Caramel Macchiato (Large),Large,360,12,59,9,51,0,480,real,75,estimado
+McDonald's,McCafé,Iced Caramel Macchiato (Medium),Medium,240,8,41,6,35,0,320,real,65,estimado
+McDonald's,McCafé,Iced Caramel Macchiato (Small),Small,200,7,33,5,28,0,250,real,55,estimado
+McDonald's,McCafé,Iced Coffee (Large),Large,270,2,47,8,38,0,65,real,49,estimado
+McDonald's,McCafé,Iced Coffee (Medium),Medium,190,2,32,6,25,0,50,real,42,estimado
+McDonald's,McCafé,Iced Coffee (Small),Small,150,1,25,5,20,0,35,real,35,estimado
+McDonald's,McCafé,Iced Coffee Black (Large),Large,10,1,2,0,0,0,20,real,49,estimado
+McDonald's,McCafé,Iced Coffee Black (Medium),Medium,5,1,1,0,0,0,15,real,42,estimado
+McDonald's,McCafé,Iced French Vanilla Coffee (Large),Large,280,2,49,8,33,0,65,real,49,estimado
+McDonald's,McCafé,Iced French Vanilla Coffee (Medium),Medium,200,2,33,6,22,0,50,real,42,estimado
+McDonald's,McCafé,Iced French Vanilla Coffee (Small),Small,150,1,25,5,17,0,35,real,35,estimado
+McDonald's,McCafé,Iced Latte (Large),Large,170,9,15,8,12,0,115,real,75,estimado
+McDonald's,McCafé,Iced Latte (Medium),Medium,120,6,11,6,8,0,80,real,65,estimado
+McDonald's,McCafé,Iced Mocha (Large),Large,440,11,67,14,59,1,190,real,75,estimado
+McDonald's,McCafé,Iced Mocha (Medium),Medium,320,8,47,11,41,1,135,real,65,estimado
+McDonald's,McCafé,Latte (Large),Large,250,13,22,12,17,0,160,real,75,estimado
+McDonald's,McCafé,Latte (Medium),Medium,190,10,17,9,13,0,120,real,65,estimado
+McDonald's,McCafé,Latte (Small),Small,140,8,13,7,10,0,90,real,55,estimado
+McDonald's,McCafé,Latte Caramel (Large),Large,390,14,60,11,52,0,490,real,75,estimado
+McDonald's,McCafé,Latte Caramel (Medium),Medium,320,11,49,8,43,0,400,real,65,estimado
+McDonald's,McCafé,Latte Caramel (Small),Small,250,9,39,7,34,0,320,real,55,estimado
+McDonald's,McCafé,Latte French Vanilla (Large),Large,400,12,63,11,47,0,150,real,75,estimado
+McDonald's,McCafé,Latte French Vanilla (Medium),Medium,320,10,52,8,38,0,115,real,65,estimado
+McDonald's,McCafé,Latte French Vanilla (Small),Small,250,8,41,6,30,0,90,real,55,estimado
+McDonald's,McCafé,Latte Iced (Small),Small,80,5,8,4,6,0,60,real,55,estimado
+McDonald's,McCafé,Latte Iced Caramel (Large),Large,330,11,54,8,48,0,460,real,75,estimado
+McDonald's,McCafé,Latte Iced Caramel (Small),Small,180,6,28,4.5,25,0,240,real,55,estimado
+McDonald's,McCafé,Mango Pineapple Lemonade Refresher 16 Oz (Small),Small,180,0,43,0,39,0,40,real,55,estimado
+McDonald's,McCafé,Mango Pineapple Lemonade Refresher 22 Oz (Medium),Medium,250,0,58,0,52,0,55,real,65,estimado
+McDonald's,McCafé,Mango Pineapple Lemonade Refresher 30 Oz (Large),Large,330,0,77,0,69,0,75,real,75,estimado
+McDonald's,McCafé,Mocha (Large),Large,460,14,68,14,60,1,210,real,75,estimado
+McDonald's,McCafé,Mocha (Medium),Medium,370,10,56,11,49,1,160,real,65,estimado
+McDonald's,McCafé,Mocha (Small),Small,290,8,45,9,39,1,125,real,55,estimado
+McDonald's,McCafé,Mocha Iced (Small),Small,270,7,39,10,33,1,115,real,55,estimado
+McDonald's,McCafé,Orange Dream with Fanta Large (Large),Large,440,0,93,9,90,0,75,real,75,estimado
+McDonald's,McCafé,Orange Dream with Fanta Medium (Medium),Medium,340,0,70,7,67,0,55,real,65,estimado
+McDonald's,McCafé,Orange Dream with Fanta Small (Small),Small,250,0,51,6,49,0,40,real,55,estimado
+McDonald's,McCafé,Orange Dream with Hi-C Large (Large),Large,450,0,96,9,90,0,80,real,75,estimado
+McDonald's,McCafé,Orange Dream with Hi-C Medium (Medium),Medium,350,0,72,7,67,0,60,real,65,estimado
+McDonald's,McCafé,Orange Dream with Hi-C Small (Small),Small,260,0,53,6,49,0,45,real,55,estimado
+McDonald's,McCafé,Red Bull Dragonberry Energizer 22 Oz,1 porcion,200,0,50,0,48,1,115,real,69,estimado
+McDonald's,McCafé,Red Bull Zero Sugar Dragonberry Energizer Medium,1 porcion,100,0,29,0,24,1,35,real,69,estimado
+McDonald's,McCafé,Reduced Sugar Vanilla Swirl with Diet Coke Large (Large),Large,230,0,39,9,36,0,90,real,75,estimado
+McDonald's,McCafé,Reduced Sugar Vanilla Swirl with Diet Coke Medium (Medium),Medium,190,0,32,7,29,0,65,real,65,estimado
+McDonald's,McCafé,Reduced Sugar Vanilla Swirl with Diet Coke Small (Small),Small,150,0,25,6,23,0,45,real,55,estimado
+McDonald's,McCafé,Sprite Berry Blast 16 Oz (Small),Small,240,0,47,6,45,0,65,real,55,estimado
+McDonald's,McCafé,Sprite Berry Blast 22 Oz (Medium),Medium,320,0,64,7,62,0,90,real,65,estimado
+McDonald's,McCafé,Sprite Berry Blast 30 Oz (Large),Large,410,0,85,9,83,0,125,real,75,estimado
+McDonald's,McCafé,Strawberry Watermelon Lemonade Refresher 16 Oz (Small),Small,160,0,36,0,34,0,40,real,55,estimado
+McDonald's,McCafé,Strawberry Watermelon Lemonade Refresher 22 Oz (Medium),Medium,210,0,50,0,47,0,55,real,65,estimado
+McDonald's,McCafé,Strawberry Watermelon Lemonade Refresher 30 Oz (Large),Large,260,1,62,0,57,0,70,real,75,estimado
+McDonald's,McCafé,Vanilla Cappuccino (Medium),Medium,260,7,47,6,34,0,80,real,65,estimado
+McDonald's,McCafé,Vanilla Cappuccino (Small),Small,210,5,37,4.5,28,0,65,real,55,estimado
+McDonald's,McCafé,Vanilla Swirl With Coke Large (Large),Large,430,0,95,9,92,0,75,real,75,estimado
+McDonald's,McCafé,Vanilla Swirl With Coke Medium (Medium),Medium,340,0,71,7,69,0,55,real,65,estimado
+McDonald's,McCafé,Vanilla Swirl With Coke Small (Small),Small,260,0,53,6,49,0,40,real,55,estimado

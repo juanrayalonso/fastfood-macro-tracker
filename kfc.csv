@@ -1,0 +1,13 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+KFC,Pollo,Pechuga de Pollo Receta Original,1 pechuga (178g),320,36,13,14,0,1,1050,estimado,32.23,menu_mx
+KFC,Pollo,Pierna,1 porción (56g),120,11,3,7,0,0,330,estimado,32.23,menu_mx
+KFC,Pollo,Popcorn Chicken,1 porción (116g),400,21,22,26,0,1,1000,estimado,80,menu_mx
+KFC,Pollo,K-Tiras,100g,141,10.99,29.44,10.24,2,1,600,estimado,38,estimado
+KFC,Sándwiches y hamburguesas,Big Crunch,1 hamburguesa (211g),480,31,49,18,7,2,1150,estimado,96.46,menu_mx
+KFC,Sándwiches y hamburguesas,Hamburguesa Suprema,1 hamburguesa (271g),451,29,52,14,9,3,1100,estimado,79.95,menu_mx
+KFC,Sándwiches y hamburguesas,Chicken Sandwich,1 sandwich,650,34,49,35,7,2,1260,estimado,125.37,menu_mx
+KFC,Acompañantes,Puré de Papa,1 taza (125g),120,2,19,4,1,2,520,estimado,36.99,menu_mx
+KFC,Acompañantes,Papas Fritas,1 porción (113g),290,7.47,33.65,14,0,3,350,estimado,37.21,menu_mx
+KFC,Acompañantes,Ensalada de Col,1 porción (114g),170,1,19,10,14,2,180,estimado,37.3,menu_mx
+KFC,Acompañantes,Biscuit,1 pieza (54g),180,4,23,8,2,1,520,estimado,25.55,menu_mx
+KFC,Postres,Pay de Manzana,1 pay (77g),172,1.5,29.3,5.4,14,1,160,estimado,34.07,menu_mx

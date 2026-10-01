@@ -1,0 +1,76 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio,origen_macros
+Napoli,Pizzas,Pizza Roma (Mediana),1 pizza mediana (~8 rebanadas),1050,51.9,128.4,36.9,10.0,6.4,2733,estimado,220,menu_foto,estimado
+Napoli,Pizzas,Pizza Roma (Grande),1 pizza grande (~10 rebanadas),1365,67.5,166.9,48.0,13.0,8.3,3553,estimado,250,menu_foto,estimado
+Napoli,Pizzas,Pizza Sardegna (Mediana),1 pizza mediana (~8 rebanadas),1061,50.8,125.8,39.3,7.6,5.4,2032,estimado,330,menu_foto,estimado
+Napoli,Pizzas,Pizza Sardegna (Grande),1 pizza grande (~10 rebanadas),1379,66.0,163.5,51.1,9.9,7.0,2642,estimado,360,menu_foto,estimado
+Napoli,Pizzas,Pizza Sorrento (Mediana),1 pizza mediana (~8 rebanadas),1029,50.1,129.6,35.0,10.8,6.8,2594,estimado,230,menu_foto,estimado
+Napoli,Pizzas,Pizza Sorrento (Grande),1 pizza grande (~10 rebanadas),1338,65.1,168.5,45.5,14.1,8.9,3372,estimado,260,menu_foto,estimado
+Napoli,Pizzas,Pizza Amalfi (Mediana),1 pizza mediana (~8 rebanadas),1045,51.2,133.1,35.0,10.3,8.6,2633,estimado,235,menu_foto,estimado
+Napoli,Pizzas,Pizza Amalfi (Grande),1 pizza grande (~10 rebanadas),1359,66.5,173.0,45.6,13.4,11.1,3423,estimado,265,menu_foto,estimado
+Napoli,Pizzas,Pizza Bologna (Mediana),1 pizza mediana (~8 rebanadas),1183,68.2,127.0,45.9,8.8,6.0,2340,estimado,245,menu_foto,estimado
+Napoli,Pizzas,Pizza Bologna (Grande),1 pizza grande (~10 rebanadas),1538,88.7,165.1,59.7,11.4,7.7,3042,estimado,275,menu_foto,estimado
+Napoli,Pizzas,Pizza Capri (Mediana),1 pizza mediana (~8 rebanadas),1033,54.6,126.5,34.9,8.8,6.0,2108,estimado,305,menu_foto,estimado
+Napoli,Pizzas,Pizza Capri (Grande),1 pizza grande (~10 rebanadas),1343,71.0,164.5,45.3,11.4,7.7,2740,estimado,335,menu_foto,estimado
+Napoli,Pizzas,Pizza Caserta (Mediana),1 pizza mediana (~8 rebanadas),1091,49.1,128.7,42.6,10.2,6.6,2574,estimado,185,menu_foto,estimado
+Napoli,Pizzas,Pizza Caserta (Grande),1 pizza grande (~10 rebanadas),1419,63.8,167.3,55.4,13.2,8.5,3346,estimado,215,menu_foto,estimado
+Napoli,Pizzas,Pizza 4 Formaggi (Mediana),1 pizza mediana (~8 rebanadas),1103,53.3,126.2,43.1,8.5,5.7,2506,estimado,260,menu_foto,estimado
+Napoli,Pizzas,Pizza 4 Formaggi (Grande),1 pizza grande (~10 rebanadas),1434,69.3,164.1,56.0,11.1,7.4,3258,estimado,290,menu_foto,estimado
+Napoli,Pizzas,Pizza Génova (mitad calzone) (Mediana),1 pizza mediana (~8 rebanadas),1354,65.8,150.5,54.5,10.8,7.4,3570,estimado,305,menu_foto,estimado
+Napoli,Pizzas,Pizza Génova (mitad calzone) (Grande),1 pizza grande (~10 rebanadas),1761,85.6,195.7,70.8,14.0,9.6,4640,estimado,335,menu_foto,estimado
+Napoli,Pizzas,Pizza Hawaii (Mediana),1 pizza mediana (~8 rebanadas),1098,55.2,133.7,38.5,14.2,6.7,2842,estimado,220,menu_foto,estimado
+Napoli,Pizzas,Pizza Hawaii (Grande),1 pizza grande (~10 rebanadas),1428,71.8,173.8,50.1,18.5,8.7,3694,estimado,250,menu_foto,estimado
+Napoli,Pizzas,Pizza Jamón (Mediana),1 pizza mediana (~8 rebanadas),990,51.0,127.3,30.9,9.4,6.0,2636,estimado,155,menu_foto,estimado
+Napoli,Pizzas,Pizza Jamón (Grande),1 pizza grande (~10 rebanadas),1287,66.4,165.5,40.2,12.2,7.7,3427,estimado,185,menu_foto,estimado
+Napoli,Pizzas,Pizza Vegetariana (Mediana),1 pizza mediana (~8 rebanadas),977,44.9,141.4,27.7,13.7,10.0,2025,estimado,240,menu_foto,estimado
+Napoli,Pizzas,Pizza Vegetariana (Grande),1 pizza grande (~10 rebanadas),1270,58.3,183.9,36.0,17.8,13.0,2633,estimado,270,menu_foto,estimado
+Napoli,Pizzas,Pizza Médici (Mediana),1 pizza mediana (~8 rebanadas),1086,47.9,132.0,41.4,11.3,7.3,2538,estimado,220,menu_foto,estimado
+Napoli,Pizzas,Pizza Médici (Grande),1 pizza grande (~10 rebanadas),1412,62.3,171.6,53.9,14.7,9.5,3299,estimado,250,menu_foto,estimado
+Napoli,Pizzas,Pizza Pepperoni (Mediana),1 pizza mediana (~8 rebanadas),1153,50.2,126.9,49.2,9.0,6.0,2826,estimado,165,menu_foto,estimado
+Napoli,Pizzas,Pizza Pepperoni (Grande),1 pizza grande (~10 rebanadas),1499,65.3,164.9,64.0,11.8,7.7,3674,estimado,195,menu_foto,estimado
+Napoli,Pizzas,Pizza Vesubio (Mediana),1 pizza mediana (~8 rebanadas),992,54.5,124.1,31.2,6.7,5.3,2108,estimado,305,menu_foto,estimado
+Napoli,Pizzas,Pizza Vesubio (Grande),1 pizza grande (~10 rebanadas),1290,70.9,161.3,40.5,8.7,6.8,2740,estimado,335,menu_foto,estimado
+Napoli,Pizzas,Pizza Positana (Mediana),1 pizza mediana (~8 rebanadas),1125,60.9,128.6,41.1,10.1,6.5,3232,estimado,300,menu_foto,estimado
+Napoli,Pizzas,Pizza Positana (Grande),1 pizza grande (~10 rebanadas),1463,79.2,167.2,53.4,13.1,8.4,4201,estimado,330,menu_foto,estimado
+Napoli,Pizzas,Pizza Ranchero (Mediana),1 pizza mediana (~8 rebanadas),1252,60.6,136.7,51.9,10.1,8.9,3456,estimado,240,menu_foto,estimado
+Napoli,Pizzas,Pizza Ranchero (Grande),1 pizza grande (~10 rebanadas),1627,78.8,177.7,67.4,13.1,11.5,4493,estimado,270,menu_foto,estimado
+Napoli,Pizzas,Pizza Siena (mitad calzone) (Mediana),1 pizza mediana (~8 rebanadas),1539,68.6,153.0,73.1,11.8,8.2,3867,estimado,310,menu_foto,estimado
+Napoli,Pizzas,Pizza Siena (mitad calzone) (Grande),1 pizza grande (~10 rebanadas),2001,89.2,198.9,95.1,15.4,10.6,5027,estimado,340,menu_foto,estimado
+Napoli,Pizzas,Pizza Torino (Mediana),1 pizza mediana (~8 rebanadas),981,50.2,129.0,30.0,10.4,6.6,2474,estimado,200,menu_foto,estimado
+Napoli,Pizzas,Pizza Torino (Grande),1 pizza grande (~10 rebanadas),1276,65.3,167.7,39.0,13.6,8.5,3216,estimado,230,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Al Pesto,1 plato,807,24.1,87.8,39.2,2.2,6.1,658,estimado,205,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Bolognesa,1 plato,712,40.9,93.3,19.5,8.2,6.7,566,estimado,210,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Bolognesa con albóndigas,1 plato,910,54.4,100.5,32.1,9.1,7.1,1016,estimado,255,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Al Gamberi,1 plato,666,40.0,85.6,17.8,1.7,5.0,234,estimado,245,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Matriciana,1 plato,728,29.9,97.2,23.8,10.0,7.3,1215,estimado,195,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Carbonara,1 plato,920,39.1,89.3,44.8,4.0,4.9,1554,estimado,205,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Aglio Olio,1 plato,655,16.0,85.4,27.5,1.7,5.0,14,estimado,170,menu_foto,estimado
+Napoli,Spaghetti,Spaghetti Portofino,1 plato,736,47.1,90.4,19.9,4.6,5.4,1058,estimado,245,menu_foto,estimado
+Napoli,Fettuccini,"Fettuccini Napoli (4 Formaggi, Al Pesto y Matriciana)",1 plato,899,31.8,92.9,43.9,5.9,6.6,1294,estimado,270,menu_foto,estimado
+Napoli,Fettuccini,Fettuccini Alfredo con pollo,1 plato,839,51.9,88.9,29.4,4.2,4.9,674,estimado,215,menu_foto,estimado
+Napoli,Fettuccini,Fettuccini Alfredo con camarón,1 plato,773,44.9,89.1,26.1,4.2,4.9,818,estimado,245,menu_foto,estimado
+Napoli,Fettuccini,Fettuccini Compagnola,1 plato,664,22.0,94.7,22.4,5.9,8.0,616,estimado,200,menu_foto,estimado
+Napoli,Fettuccini,Fettuccini Verdi,1 plato,746,45.5,90.1,22.7,4.0,6.0,768,estimado,245,menu_foto,estimado
+Napoli,Fettuccini,Fettuccini Terra y Mare,1 plato,681,43.6,92.8,14.9,6.2,6.0,692,estimado,245,menu_foto,estimado
+Napoli,Fettuccini,Fettuccini Vegetariana,1 plato,543,21.1,101.6,6.4,11.3,10.2,648,estimado,205,menu_foto,estimado
+Napoli,Pasta corta,Pasta corta Arrabiata,1 plato,541,17.8,94.9,9.5,9.3,7.0,574,estimado,195,menu_foto,estimado
+Napoli,Pasta corta,Pasta corta Arrabiata con camarón,1 plato,640,41.8,95.1,9.8,9.3,7.0,794,estimado,225,menu_foto,estimado
+Napoli,Pasta corta,Pasta corta 4 Formaggi,1 plato,885,41.9,87.7,40.3,4.4,4.9,1032,estimado,210,menu_foto,estimado
+Napoli,Pasta corta,Pasta corta Al Salmone,1 plato,758,36.1,90.9,26.1,5.2,5.5,524,estimado,250,menu_foto,estimado
+Napoli,Entradas y ensaladas,Crema de tomate,1 tazón (~350 g),345,7.2,39.1,17.4,18.7,4.8,1443,estimado,99,menu_foto,estimado
+Napoli,Entradas y ensaladas,Carpaccio de betabel,1 plato,348,10.8,23.7,24.5,17.2,5.1,275,estimado,175,menu_foto,estimado
+Napoli,Entradas y ensaladas,Carpaccio de salmón,1 plato,267,24.4,1.8,17.3,0.6,0.6,349,estimado,210,menu_foto,estimado
+Napoli,Entradas y ensaladas,Insalate Boscaiola,1 ensalada,368,16.8,18.0,27.3,6.4,5.1,806,estimado,205,menu_foto,estimado
+Napoli,Entradas y ensaladas,Insalate Boscaiola con pollo extra (150 g),1 ensalada,615,63.3,18.0,32.7,6.4,5.1,918,estimado,255,menu_foto,estimado
+Napoli,Entradas y ensaladas,Insalate Mixta,1 ensalada,392,17.4,23.9,27.4,8.0,7.1,825,estimado,189,menu_foto,estimado
+Napoli,Entradas y ensaladas,Insalate Mixta con pollo extra (150 g),1 ensalada,640,63.9,23.9,32.8,8.0,7.1,938,estimado,239,menu_foto,estimado
+Napoli,Entradas y ensaladas,Caprese,1 plato,628,29.9,11.4,52.6,5.7,2.4,968,estimado,195,menu_foto,estimado
+Napoli,Entradas y ensaladas,Berenjenas,1 plato,390,17.8,22.1,27.6,9.8,7.2,1213,estimado,255,menu_foto,estimado
+Napoli,Entradas y ensaladas,Camarones Don Vito (salsa alfredo),140 g camarón,367,38.4,5.1,22.0,2.4,0.0,848,estimado,250,menu_foto,estimado
+Napoli,Platos fuertes,Filete Ferry,1 plato,668,74.3,6.7,37.9,3.5,2.1,286,estimado,490,menu_foto,estimado
+Napoli,Platos fuertes,Salmón alcaparrado,1 plato,571,41.8,4.6,41.4,1.7,2.0,588,estimado,405,menu_foto,estimado
+Napoli,Platos fuertes,Polpettone,1 plato,996,75.1,28.1,66.1,2.9,3.3,1570,estimado,365,menu_foto,estimado
+Napoli,Platos fuertes,Pechuga de pollo Arrabiata,1 plato (c/ fettuccini),660,78.5,47.2,15.7,7.4,4.3,574,estimado,260,menu_foto,estimado
+Napoli,Platos fuertes,Pechuga de pollo Alfredo,1 plato (c/ ensalada),619,78.7,8.8,29.1,4.2,1.6,786,estimado,260,menu_foto,estimado
+Napoli,Platos fuertes,"Ravioles Toscana (6 pzas, salsa alfredo)",1 plato,604,20.2,58.0,32.4,5.6,2.7,1260,estimado,240,menu_foto,estimado
+Napoli,Platos fuertes,"Ravioles Palermo (8 pzas, salsa alfredo)",1 plato,655,22.6,64.7,34.1,6.1,3.4,1366,estimado,250,menu_foto,estimado
+Napoli,Platos fuertes,Lasagna artesanal,1 plato,676,45.1,48.0,35.1,8.1,4.2,1003,estimado,255,menu_foto,estimado

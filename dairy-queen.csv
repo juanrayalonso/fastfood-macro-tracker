@@ -1,0 +1,22 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+Dairy Queen,Blizzard,Blizzard Oreo Mini,1 porción (189g),380,8,56,14,47,1,260,estimado,45,estimado
+Dairy Queen,Blizzard,Blizzard Oreo Chico,1 porción (298g),620,12,92,23,78,2,420,estimado,50.08,menu_mx
+Dairy Queen,Blizzard,Blizzard Oreo Mediano,1 porción,700,13,103,26,90,2,480,estimado,92,menu_mx
+Dairy Queen,Blizzard,Blizzard Fresa Pay de Queso Chico,1 porción,510,12,69,20,52,1,380,estimado,50.08,menu_mx
+Dairy Queen,Blizzard,Blizzard Fresa Pay de Queso Mediano,1 porción (361g),680,15,92,28,70,1,500,estimado,92,menu_mx
+Dairy Queen,Blizzard,Blizzard Fresa Pay de Queso Grande,1 porción,990,18,143,39,100,2,730,estimado,115,estimado
+Dairy Queen,Blizzard,Blizzard Chocolate Xtreme Mediano,1 porción (392g),980,17,130,44,110,3,600,estimado,92,menu_mx
+Dairy Queen,Blizzard,Blizzard Reese's Chico,1 porción (305g),600,14,87,21,78,2,420,estimado,50.08,menu_mx
+Dairy Queen,Blizzard,Blizzard M&M's Mediano,1 porción,660,13,101,23,92,2,430,estimado,92,menu_mx
+Dairy Queen,Blizzard,Blizzard Tropical Mediano,1 porción (382g),580,13,97,17,83,1,330,estimado,92,menu_mx
+Dairy Queen,Blizzard,Blizzard Butterfinger Mini,1 porción (262g),470,11,71,16,62,2,330,estimado,45,estimado
+Dairy Queen,Blizzard,Blizzard Snickers Mediano,1 porción (397g),850,18,123,33,108,3,560,estimado,92,menu_mx
+Dairy Queen,Helados y conos,Cono Chico,1 cono chico (142g),230,6,36,7,27,0,100,estimado,25,estimado
+Dairy Queen,Helados y conos,Helado de Vainilla,1 porción (125g),190,5,28,6,24,0,90,estimado,30,estimado
+Dairy Queen,Helados y conos,Cono Waffle,1 porción (226g),420,10,67,13,45,1,160,estimado,50,estimado
+Dairy Queen,Helados y conos,DQ Sandwich,1 porción (85g),190,4,31,5,15,1,150,estimado,30.83,estimado
+Dairy Queen,Helados y conos,Dilly Bar,100g,230,4,25,14,20,1,70,estimado,35,estimado
+Dairy Queen,Helados y conos,Chips Ahoy Sandwich,1 porción (37g),90,2,11,4.5,7,0,60,estimado,25,estimado
+Dairy Queen,Helados y conos,Triple Chocolate,1 porción,540,8,75,24,62,3,330,estimado,85,estimado
+Dairy Queen,Pasteles,Pastel,100g,230,4,32,10,22,1,200,estimado,55,estimado
+Dairy Queen,Pasteles,Pastel Helado de Choco Fresa,100g,200,3,29,8,22,1,140,estimado,55,estimado

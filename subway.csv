@@ -1,0 +1,96 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+Subway,Series de Subway,Costillas Holy Moly Guacamoli 15 cm,1 sándwich 15 cm,660,23,58,38,12,5,1470,real,169,estimado
+Subway,Series de Subway,Costillas Holy Moly Guacamoli 30 cm,1 sándwich 30 cm (x2 de 15 cm),1320,46,116,76,24,10,2940,real,295,estimado
+Subway,Series de Subway,Crunchy Steak Bacon 15 cm,1 sándwich 15 cm,550,30,51,23,8,3,1500,real,169,estimado
+Subway,Series de Subway,Crunchy Steak Bacon 30 cm,1 sándwich 30 cm (x2 de 15 cm),1100,60,102,46,16,6,3000,real,295,estimado
+Subway,Series de Subway,American Teriyaki 15 cm,1 sándwich 15 cm,470,24,64,13,20,5,1060,real,159,estimado
+Subway,Series de Subway,American Teriyaki 30 cm,1 sándwich 30 cm (x2 de 15 cm),940,48,128,26,40,10,2120,real,280,estimado
+Subway,Series de Subway,Oh My Boneless! 15 cm,1 sándwich 15 cm,550,27,57,24,7,4,1870,real,159,estimado
+Subway,Series de Subway,Oh My Boneless! 30 cm,1 sándwich 30 cm (x2 de 15 cm),1100,54,114,48,14,8,3740,real,280,estimado
+Subway,Series de Subway,Jamtochino 15 cm,1 sándwich 15 cm,410,21,47,15,7,3,1630,real,149,estimado
+Subway,Series de Subway,Jamtochino 30 cm,1 sándwich 30 cm (x2 de 15 cm),820,42,94,30,14,6,3260,real,260,estimado
+Subway,Series de Subway,Italonni 15 cm,1 sándwich 15 cm,490,21,41,27,5,3,1330,real,149,estimado
+Subway,Series de Subway,Italonni 30 cm,1 sándwich 30 cm (x2 de 15 cm),980,42,82,54,10,6,2660,real,260,estimado
+Subway,Sándwiches 15 cm,Costillas BBQ 15 cm,1 sándwich 15 cm,470,21,48,22,13,6,990,real,149,estimado
+Subway,Sándwiches 30 cm,Costillas BBQ 30 cm,1 sándwich 30 cm (x2 de 15 cm),940,42,96,44,26,12,1980,real,260,estimado
+Subway,Sándwiches 15 cm,Jamón 15 cm,1 sándwich 15 cm,270,16,40,6,7,6,790,real,99,estimado
+Subway,Sándwiches 30 cm,Jamón 30 cm,1 sándwich 30 cm (x2 de 15 cm),540,32,80,12,14,12,1580,real,175,estimado
+Subway,Sándwiches 15 cm,Boneless Hot 15 cm,1 sándwich 15 cm,540,23,54,26,6,4,1900,real,139,estimado
+Subway,Sándwiches 30 cm,Boneless Hot 30 cm,1 sándwich 30 cm (x2 de 15 cm),1080,46,108,52,12,8,3800,real,245,estimado
+Subway,Sándwiches 15 cm,Pollo Estilo Teriyaki 15 cm,1 sándwich 15 cm,330,22,52,4,17,5,630,real,129,estimado
+Subway,Sándwiches 30 cm,Pollo Estilo Teriyaki 30 cm,1 sándwich 30 cm (x2 de 15 cm),660,44,104,8,34,10,1260,real,225,estimado
+Subway,Sándwiches 15 cm,Pollo 15 cm,1 sándwich 15 cm,290,25,39,4,7,5,440,real,119,estimado
+Subway,Sándwiches 30 cm,Pollo 30 cm,1 sándwich 30 cm (x2 de 15 cm),580,50,78,8,14,10,880,real,210,estimado
+Subway,Sándwiches 15 cm,Chicken Bacon Ranch® 15 cm,1 sándwich 15 cm,390,29,40,13,8,5,710,real,139,estimado
+Subway,Sándwiches 30 cm,Chicken Bacon Ranch® 30 cm,1 sándwich 30 cm (x2 de 15 cm),780,58,80,26,16,10,1420,real,245,estimado
+Subway,Sándwiches 15 cm,Milanesa de Pollo 15 cm,1 sándwich 15 cm,390,19,51,14,7,9,470,real,139,estimado
+Subway,Sándwiches 30 cm,Milanesa de Pollo 30 cm,1 sándwich 30 cm (x2 de 15 cm),780,38,102,28,14,18,940,real,245,estimado
+Subway,Sándwiches 15 cm,Milanesa de Pollo Napolitana 15 cm,1 sándwich 15 cm,530,27,58,23,8,8,1570,real,149,estimado
+Subway,Sándwiches 30 cm,Milanesa de Pollo Napolitana 30 cm,1 sándwich 30 cm (x2 de 15 cm),1060,54,116,46,16,16,3140,real,260,estimado
+Subway,Sándwiches 15 cm,Milanesa de Pollo Mexicana 15 cm,1 sándwich 15 cm,470,19,55,22,6,8,760,real,149,estimado
+Subway,Sándwiches 30 cm,Milanesa de Pollo Mexicana 30 cm,1 sándwich 30 cm (x2 de 15 cm),940,38,110,44,12,16,1520,real,260,estimado
+Subway,Sándwiches 15 cm,Milanesa de Pollo 3 Quesos 15 cm,1 sándwich 15 cm,480,22,53,22,5,6,1080,real,149,estimado
+Subway,Sándwiches 30 cm,Milanesa de Pollo 3 Quesos 30 cm,1 sándwich 30 cm (x2 de 15 cm),960,44,106,44,10,12,2160,real,260,estimado
+Subway,Sándwiches 15 cm,Italiano B.M.T.® 15 cm,1 sándwich 15 cm,390,19,40,17,7,6,1050,real,129,estimado
+Subway,Sándwiches 30 cm,Italiano B.M.T.® 30 cm,1 sándwich 30 cm (x2 de 15 cm),780,38,80,34,14,12,2100,real,225,estimado
+Subway,Sándwiches 15 cm,Albondigas 15 cm,1 sándwich 15 cm,540,28,57,22,10,5,1410,real,139,estimado
+Subway,Sándwiches 30 cm,Albondigas 30 cm,1 sándwich 30 cm (x2 de 15 cm),1080,56,114,44,20,10,2820,real,245,estimado
+Subway,Sándwiches 15 cm,Pollo Parmesano 15 cm,1 sándwich 15 cm,430,21,55,16,9,9,660,real,139,estimado
+Subway,Sándwiches 30 cm,Pollo Parmesano 30 cm,1 sándwich 30 cm (x2 de 15 cm),860,42,110,32,18,18,1320,real,245,estimado
+Subway,Sándwiches 15 cm,Pizza Sub 15 cm,1 sándwich 15 cm,430,19,44,20,9,6,1140,real,129,estimado
+Subway,Sándwiches 30 cm,Pizza Sub 30 cm,1 sándwich 30 cm (x2 de 15 cm),860,38,88,40,18,12,2280,real,225,estimado
+Subway,Sándwiches 15 cm,Carne y Queso 15 cm,1 sándwich 15 cm,370,25,39,11,5,2,1050,real,139,estimado
+Subway,Sándwiches 30 cm,Carne y Queso 30 cm,1 sándwich 30 cm (x2 de 15 cm),740,50,78,22,10,4,2100,real,245,estimado
+Subway,Sándwiches 15 cm,Atún 15 cm,1 sándwich 15 cm,320,19,40,10,6,5,580,real,119,estimado
+Subway,Sándwiches 30 cm,Atún 30 cm,1 sándwich 30 cm (x2 de 15 cm),640,38,80,20,12,10,1160,real,210,estimado
+Subway,Sándwiches 15 cm,Pechuga de pavo 15 cm,1 sándwich 15 cm,270,15,44,4,7,5,690,real,109,estimado
+Subway,Sándwiches 30 cm,Pechuga de pavo 30 cm,1 sándwich 30 cm (x2 de 15 cm),540,30,88,8,14,10,1380,real,190,estimado
+Subway,Sándwiches 15 cm,Deleite Vegetariano 15 cm,1 sándwich 15 cm,250,12,39,6,6,5,440,real,99,estimado
+Subway,Sándwiches 30 cm,Deleite Vegetariano 30 cm,1 sándwich 30 cm (x2 de 15 cm),500,24,78,12,12,10,880,real,175,estimado
+Subway,Golazo,Costillitas BBQ (Golazo),1 sándwich Golazo,360,13,40,16,9,2,1110,real,109,estimado
+Subway,Golazo,Jamon y Queso con Guacamole (Golazo),1 sándwich Golazo,330,10,37,15,5,3,1010,real,99,estimado
+Subway,Golazo,Milanesa de Pollo (Golazo),1 sándwich Golazo,490,21,35,20,6,3,1000,real,109,estimado
+Subway,Golazo,Ultra Golazo Steak (Golazo),1 sándwich Golazo,420,23,41,15,9,2,1480,real,129,estimado
+Subway,Golazo,Golazo Kids sub (Golazo),1 sándwich Golazo,290,11,34,12,5,1,980,real,89,estimado
+Subway,Pastor,Gran Pastor,1 sándwich Pastor,470,31,43,20,5,5,1510,real,159,estimado
+Subway,Pastor,Gringo Pastor,1 sándwich Pastor,420,31,40,15,5,2,1360,real,149,estimado
+Subway,Pastor,Campechano,1 sándwich Pastor,430,25,45,17,6,3,1030,real,149,estimado
+Subway,Pastor,Golazo Pastor,1 sándwich Pastor,290,14,40,8,5,2,750,real,99,estimado
+Subway,Ensaladas,Ensalada Costillas BBQ,1 ensalada (sin aderezo),310,14,19,20,10,5,810,real,159,estimado
+Subway,Ensaladas,Ensalada Jamón,1 ensalada (sin aderezo),110,9,11,4,5,4,600,real,109,estimado
+Subway,Ensaladas,Ensalada Boneless Hot,1 ensalada (sin aderezo),450,18,28,30,7,6,1860,real,149,estimado
+Subway,Ensaladas,Ensalada Milanesa de Pollo,1 ensalada (sin aderezo),230,12,22,13,5,7,280,real,149,estimado
+Subway,Ensaladas,Ensalada Pollo,1 ensalada (sin aderezo),120,17,10,2,5,4,250,real,119,estimado
+Subway,Ensaladas,Ensalada Pollo Estilo Teriyaki,1 ensalada (sin aderezo),160,14,23,2,15,4,440,real,129,estimado
+Subway,Ensaladas,Ensalada Chicken Bacon Ranch®,1 ensalada (sin aderezo),220,21,11,12,5,4,520,real,139,estimado
+Subway,Ensaladas,Ensalada Italian BMT®,1 ensalada (sin aderezo),220,12,11,15,5,4,860,real,129,estimado
+Subway,Ensaladas,Ensalada Pollo Parmesano,1 ensalada (sin aderezo),270,13,25,15,7,8,480,real,139,estimado
+Subway,Ensaladas,Ensalada Pizza Sub,1 ensalada (sin aderezo),270,12,14,19,7,4,950,real,129,estimado
+Subway,Ensaladas,Ensalada Carne y Queso,1 ensalada (sin aderezo),230,21,11,10,5,4,890,real,139,estimado
+Subway,Ensaladas,Ensalada Atún,1 ensalada (sin aderezo),160,11,10,9,4,4,390,real,119,estimado
+Subway,Ensaladas,Ensalada Pechuga de pavo,1 ensalada (sin aderezo),100,8,14,2,5,4,500,real,109,estimado
+Subway,Ensaladas,Ensalada Deleite Vegetariano con queso,1 ensalada (sin aderezo),90,5,9,4,4,4,250,real,99,estimado
+Subway,Extras,Extra Tocino (2 tiras),1 porción extra,80,6,1,6,0,0,290,real,25,estimado
+Subway,Extras,Extra Guacamole,1 porción extra,50,1,3,5,0,2,125,real,25,estimado
+Subway,Extras,Extra Queso estilo Americano,1 porción extra,40,2,0,3,0,0,190,real,15,estimado
+Subway,Extras,Extra Manchego,1 porción extra,40,2,0,3,0,0,180,real,15,estimado
+Subway,Extras,Extra Mozzarella,1 porción extra,110,7,1,9,0,0,230,real,25,estimado
+Subway,Extras,Extra Parmesano,1 porción extra,5,1,0,0,0,0,25,real,10,estimado
+Subway,Extras,Extra Pieza de costilla en salsa barbecue,1 porción extra,240,11,4,19,3,1,470,real,45,estimado
+Subway,Extras,Extra Boneless,1 porción extra,170,12,10,9,1,2,920,real,45,estimado
+Subway,Extras,Extra Pollo empanizado,1 porción extra,180,9,12,12,0,4,220,real,45,estimado
+Subway,Extras,Extra Tiras de pollo,1 porción extra,70,15,1,1,1,0,190,real,35,estimado
+Subway,Extras,Extra Tiras de pollo bañadas en salsa teriyaki,1 porción extra,70,11,5,1,2,0,290,real,35,estimado
+Subway,Extras,Extra Jamón (carne),1 porción extra,60,6,2,3,1,1,540,real,25,estimado
+Subway,Extras,Extra Carnes italianas BMT®,1 porción extra,180,9,2,14,0,1,800,real,35,estimado
+Subway,Extras,Extra Pepperoni (3 rebanadas),1 porción extra,80,3,1,7,0,0,280,real,25,estimado
+Subway,Extras,Extra Carne (sin queso),1 porción extra,140,16,2,6,1,1,640,real,45,estimado
+Subway,Extras,Extra Atún (carne),1 porción extra,110,9,1,8,0,0,330,real,30,estimado
+Subway,Extras,Extra Pechuga de pavo (carne),1 porción extra,50,5,5,1,1,0,440,real,30,estimado
+Subway,Postres,Galleta de Chispas de Chocolate,1 galleta,220,2,27,11,17,1,90,real,22,estimado
+Subway,Postres,Galleta de Doble Chocolate,1 galleta,220,2,27,12,18,1,65,real,22,estimado
+Subway,Postres,Galleta de Nuez,1 galleta,210,2,29,10,19,1,90,real,22,estimado
+Subway,Postres,Galleta de Arándano,1 galleta,210,2,29,10,19,1,90,real,22,estimado
+Subway,Guarniciones,Papas Horneadas Crosschips,1 porción,180,3,27,7,1,2,910,real,45,estimado
+Subway,Guarniciones,Boneless Bites (incluye salsa búfalo),1 porción,350,25,21,19,2,4,2730,real,99,estimado
+Subway,Guarniciones,Boneless Bites (incluye salsa BBQ),1 porción,360,25,24,18,5,4,2100,real,99,estimado

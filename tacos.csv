@@ -1,0 +1,34 @@
+﻿restaurante,categoria,producto,porcion,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,origen_azucar_fibra_sodio,precio_mxn,origen_precio
+Genérico,Tacos,Taco de Bistec,1 taco,270,14.17,20.66,14.52,1,2,380,estimado,25,estimado
+Genérico,Tacos,Taco al Pastor,1 taco,93,4.99,4.73,6.12,1,1,180,estimado,22,estimado
+Genérico,Tacos,Taco de Suadero,1 taco,247,15.05,10.13,16.05,1,1,320,estimado,25,estimado
+Genérico,Tacos,Tacos de Barbacoa,1 taco,196,9.77,16.17,10.23,1,2,330,estimado,30,estimado
+Genérico,Tacos,Taco de Carnitas,1 taco,243,16,21.66,10.08,1,2,360,estimado,30,estimado
+Genérico,Tacos,Taco de Cabeza,1 taco,96,6.3,11.23,2.82,1,1,220,estimado,25,estimado
+Genérico,Tacos,Tacos de Canasta,1 taco,129,4.03,16.37,5.64,1,1,230,estimado,12,estimado
+Genérico,Tacos,Taco de Tripa,1 taco,154,10.11,17.22,5.09,1,1,280,estimado,25,estimado
+Genérico,Tacos,Tacos de Asada,1 taco,171,12,14,7,1,1,300,estimado (macros tambien; solo kcal en la fuente),25,estimado
+Genérico,Tacos,Tacos Dorados,1 taco,164,9.28,14.06,8.06,1,1,260,estimado,20,estimado
+Genérico,Tacos,Taco de Harina,1 regular 18 cm,169,2.91,18,9.38,1,1,260,estimado,15,estimado
+Genérico,Tacos,Tacos o Tostadas con Carne de Res Lechuga Tomate y Salsa,1 taco o tostada,144,7.82,10.97,7.77,1,2,260,estimado,30,estimado
+Genérico,Tacos,Taco de Maíz,1 grande,98,1.51,13.1,4.75,0,2,130,estimado,15,estimado
+Genérico,Tacos,Taco (grande),1 grande,568,31.77,41.11,31.61,2,3,780,estimado,45,estimado
+Genérico,Tacos,Tacos de Discada,1 taco,243,12.71,13.98,15.05,1,1,350,estimado,30,estimado
+El Fogoncito,Tacos,Alambre,5 tacos (328g),456,29,40,20,3,4,900,estimado,150,estimado
+Genérico,Tacos,Taco Suave con Carne de Res Queso Lechuga Tomate y Crema Agria,1 taco,304,14.66,23.91,16.33,2,2,520,estimado,35,estimado
+Jack In The Box,Tacos,Taco,1 taco,170,6,16,9,1,1,330,estimado,22,estimado
+Genérico,Tacos,Tacos o Tostadas con Carne de Res Queso y Lechuga,1 taco o tostada,221,10.88,16.2,12.65,1,2,330,estimado,30,estimado
+Genérico,Tacos,Taco Dorado de Papa,1 taco,235,2.8,23.85,14.96,1,2,330,estimado,20,estimado
+Genérico,Tacos,Taco Suave con Carne Queso y Lechuga,1 taco,257,13.47,23.57,11.65,1,2,480,estimado,35,estimado
+Genérico,Tacos,Tacos o Tostadas sin Carne con Frijoles y Queso Lechuga Tomate y Salsa,1 taco o tostada,144,5.29,16.42,6.83,2,3,300,estimado,25,estimado
+La Oriental,Tacos,Taco Árabe,1 porción,320,17,13,23,1,1,600,estimado,45,estimado
+Genérico,Tacos,Taco de Birria,1 taco,95,7.47,8.08,3.67,0,1,200,estimado,30,estimado
+Genérico,Tacos,Tacos o Tostadas con Pollo Queso Lechuga Tomate y Salsa,1 taco o tostada,142,10.11,9.84,7.05,1,2,260,estimado,30,estimado
+El Fogoncito,Tacos,Taco al Pastor,1 taco (35g),92,4,5,6,1,1,170,estimado,38,estimado
+Genérico,Tacos,Quesabirria,1 unidad,443,31.18,33.92,20.47,2,2,700,estimado,40,estimado
+Genérico,Tacos,Taco Dorado de Pollo,1 taco,126,7.12,10.27,6.65,1,1,230,estimado,20,estimado
+Genérico,Tacos,Tacos o Tostadas con Carne de Res Queso Lechuga Tomate y Salsa,1 taco o tostada,173,9.67,10.96,10.25,1,2,290,estimado,30,estimado
+Genérico,Tacos,Taco Gobernador,100g,155,10.6,18.33,4.73,1,2,300,estimado,40,estimado
+El Fogoncito,Tacos,Gringa,1 pieza (100g),411,23,20,26,2,2,800,estimado,75,estimado
+Genérico,Tacos,Tacos o Tostadas con Frijoles Queso Carne Lechuga Tomate y Salsa,1 taco o tostada,151,8.12,12.54,7.85,1,3,290,estimado,30,estimado
+OXXO,Tacos,Tacos de Canasta,3 piezas,407,15.3,50.2,16.2,3,3,700,estimado,33,estimado

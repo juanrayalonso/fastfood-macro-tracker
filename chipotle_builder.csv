@@ -1,0 +1,26 @@
+﻿id,grupo,componente,kcal,proteina_g,carbs_g,grasa_g,azucar_g,fibra_g,sodio_mg,precio_mxn,regla
+chipotle_01,proteina,Pollo,180,32,0,7,0,0,310,149,precio = precio base del platillo (entrée); elegir 1
+chipotle_02,proteina,Steak,150,21,1,6,0,0,315,189,precio = precio base del platillo (entrée); elegir 1
+chipotle_03,proteina,Barbacoa,170,24,2,7,1,0,530,189,precio = precio base del platillo (entrée); elegir 1
+chipotle_04,proteina,Carnitas,210,23,0,12,0,0,450,169,precio = precio base del platillo (entrée); elegir 1
+chipotle_05,proteina,Sofritas,150,8,9,10,4,3,560,149,precio = precio base del platillo (entrée); elegir 1
+chipotle_06,proteina,Vegetariano,0,0,0,0,0,0,0,149,precio = precio base del platillo (entrée); elegir 1; suma guacamole aparte (ya incluido en precio)
+chipotle_07,formato,Tortilla burrito,320,8,50,9,1,3,635,0,"elegir 1 (burrito, tacos crujientes, tacos suaves o ensalada)"
+chipotle_08,formato,3 tacos crujientes,180,3,21,9,0,2,200,0,"elegir 1 (burrito, tacos crujientes, tacos suaves o ensalada)"
+chipotle_09,formato,3 tacos suaves de maíz,170,4,35,2,0,4,40,0,"elegir 1 (burrito, tacos crujientes, tacos suaves o ensalada)"
+chipotle_10,formato,Lechuga (base de ensalada),15,1,3,0,1,1,5,0,"elegir 1 (burrito, tacos crujientes, tacos suaves o ensalada)"
+chipotle_11,formato,Lechuga (topping),5,0,1,0,0,0,2,0,"elegir 1 (burrito, tacos crujientes, tacos suaves o ensalada)"
+chipotle_12,arroz,Arroz blanco,210,4,40,4,0,1,350,0,"opcional, máx 1"
+chipotle_13,arroz,Arroz integral,210,4,36,6,0,2,330,0,"opcional, máx 1"
+chipotle_14,frijoles,Frijoles pintos,130,8,21,1.5,1,8,210,0,"opcional, máx 1"
+chipotle_15,frijoles,Frijoles negros,130,8,22,1.5,1,8,260,0,"opcional, máx 1"
+chipotle_16,topping,Fajita de verduras,20,1,5,0,3,1,15,0,opcional (incluido en el precio)
+chipotle_17,topping,Pico de gallo,25,0,4,0,2,1,260,0,opcional (incluido en el precio)
+chipotle_18,topping,Salsa verde,20,0,4,0,2,1,500,0,opcional (incluido en el precio)
+chipotle_19,topping,Salsa roja,30,0,4,0,2,1,500,0,opcional (incluido en el precio)
+chipotle_20,topping,Chile y elote,80,3,16,2,4,3,330,0,opcional (incluido en el precio)
+chipotle_21,topping,Crema,110,2,2,9,1,0,30,0,opcional (incluido en el precio)
+chipotle_22,topping,Queso Monterey Jack,110,6,1,9,0,0,180,0,opcional (incluido en el precio)
+chipotle_23,topping,Vinagreta chipotle-miel,220,0,21,16,20,0,700,0,opcional (incluido en el precio)
+chipotle_24,extra,Guacamole,230,2,8,22,1,6,370,49,precio = extra al platillo
+chipotle_25,extra,Queso blanco,120,5,4,9,2,0,260,29,precio = extra al platillo
